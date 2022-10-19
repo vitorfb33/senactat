@@ -1,0 +1,26 @@
+MINTUPDATE:
+ATUALIZAR -->  APT --> sources.list
+REPOSITORIOS --> APT --> sources.list
+instalar atualização --> APT
+(=DIRETORIO)
+  pesqueisar: oque é PPA `s 
+-----------------------------------------
+instalação dos usuarios do virtualbox
+dispositivos, 
+         inserir imagem do CD dos convidados 
+------------------------------------------		 		 
+atualizar via linha de comando 
+   sudo apt update  ---> mintUpdate atualizar 
+   sudo apt upgarde ---> mintUpdate instalar
+   sudo apt full-upgrade
+   sudo apt dist- upgrade
+   sudo apt autoremove
+   sudo apt autoclean 
+   sudo apt clean 
+   history
+   
+  oque é bash?  
+  oque é shell?
+  oque é APT-GET?
+  oque é SUDO?
+
