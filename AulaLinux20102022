@@ -1,0 +1,30 @@
+MINTUPDATE:
+UTILIZAR O mintupdate 
+UTILIZAR o terminal - APT
+ATALHO: Ctrl + Alt + t
+------------------------------------------		 		 
+atualizar via linha de comando 
+   sudo apt update  
+   sudo apt upgrade 
+   sudo apt full-upgrade 
+   sudo apt dist-upgrade
+   sudo apt autoremove
+   sudo apt autoclean 
+-------------------------------------------
+Instalar Software (linux)
+google chrome - 64 bits .deb 
+
+Instalar Software Opera
+opera - 64 bits .deb
+
+Instalar Software
+Ttf-mscorefonts- installer 
+--------------------------------------------
+Instalar Software por linha de comando
+ abrir o terminal 
+ sudo apt install git vim pse
+ apertar TAB DUAS VEZES PARA BUSCAR O RESTO DO NOME
+ sudo apt install git vim psensor 
+ 
+PESQUISAR 
+oque é Gdebi --> Dependências
