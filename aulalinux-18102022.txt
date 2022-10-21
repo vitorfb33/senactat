@@ -18,9 +18,18 @@ atualizar via linha de comando
    sudo apt autoclean 
    sudo apt clean 
    history
-   
-  oque é bash?  
-  oque é shell?
-  oque é APT-GET?
-  oque é SUDO?
-
+  
+  oque é PPAs: PPAs quer dizer Personal Package Archives, os repositorios nada mais são do que servidores na internet onde se encontra os pogramas para você baixar
+  
+  oque é bash:é um acrônimo para "Bourne Again Shell" e foi desenvolvido em 1989 para suceder o Bourne Shell. É um programa shell executado em uma interface de linha 
+  de comando e tem como principal função controlar sistemas operacionais, sendo comumente utilizado no Linux e no macOS
+  https://rockcontent.com/br/blog/bash/#:~:text=Bash%20%C3%A9%20um%20acr%C3%B4nimo%20para,no%20Linux%20e%20no%20macOS.
+  
+  oque é shell:shell é uma interface de linha de comando e que permite executar comando
+  
+  oque é APT-GET: é um recurso desenvolvido originalmente para a distribuição debia que permite a instalação e a atualização de pacotes no linux de maneira facil e    
+  precisa 
+  https://www.infowester.com/aptget1.php
+  
+  oque é SUDO: O Sudo é um comando utilizado no Sistema operacional, usado como super usuario para ter acesso a certo tipo de arquivos, softwares, pacotes.
+  
