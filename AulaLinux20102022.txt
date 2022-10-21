@@ -27,4 +27,5 @@ Instalar Software por linha de comando
  sudo apt install git vim psensor 
  
 PESQUISAR 
-oque é Gdebi --> Dependências
+oque é Gdebi --> com gdebi você instala pacotes deb locais resolvendo e instalando suas dependências
+https://packages.debian.org/pt-br/sid/gdebi-core#:~:text=ferramenta%20simples%20para%20instala%C3%A7%C3%A3o%20de%20arquivos%20deb
