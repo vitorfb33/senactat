@@ -13,7 +13,7 @@
 	_f - Brave.- ok
 	
 #02_ Instalação do suporte ao TTF (TrueType Fonts)
-	a_ Ttf-mscorefonts (Gerenciador de Aplicativos)
+	a_ Ttf-mscorefonts (Gerenciador de Aplicativos)----- ok
 
 #03_ Instalação dos Pacote Office
 	_a - WPS Office for Linux (Recomendo via Gdebi)
