@@ -19,7 +19,7 @@
 	_a - WPS Office for Linux (Recomendo via Gdebi)---- ok
 	_c - FreeOffice for Linux (Recomendo via Gdebi)
 	_d - OnlyOffice Desktop for Linux (Recomendo AppImagem)---- ok
-	_e - Microsoft Teams for Linux (Recomendo via Gdebi)
+	_e - Microsoft Teams for Linux (Recomendo via Gdebi)---- ok
 	_f - Skype for Linux (Recomendo via Gdebi)
 	_g - KolourPaint (Gerenciador de Aplicativo)
 
