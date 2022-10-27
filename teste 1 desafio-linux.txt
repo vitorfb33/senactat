@@ -18,6 +18,14 @@
 #03_ Instalação dos Pacote Office
 	_a - WPS Office for Linux (Recomendo via Gdebi)---- ok
 	_c - FreeOffice for Linux (Recomendo via Gdebi)---- ok
+	sudo -i
+wget -qO - https://shop.softmaker.com/repo/linux-repo-public.key | apt-key add -
+echo "deb https://shop.softmaker.com/repo/apt stable non-free" > /etc/apt/sources.list.d/softmaker.list
+apt update
+apt install softmaker-freeoffice-2021
+
+sudo apt update
+sudo apt upgrade
 	_d - OnlyOffice Desktop for Linux (Recomendo AppImagem)---- ok
 	_e - Microsoft Teams for Linux (Recomendo via Gdebi)---- ok
 	_f - Skype for Linux (Recomendo via Gdebi)---- ok
