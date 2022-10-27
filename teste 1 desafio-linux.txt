@@ -5,39 +5,40 @@
 #TEMPO POIS VAI TRAVAR A MÁQUINA VIRTUAL.
 -------------------------------------------------------------------------
 #01_ Instalação dos Navegadores (Recomendo via Gdebi)
-	_a - Google Chrome;---- ok
-	_b - Opera;---- ok
-	_c - Microsoft Edge;---- ok
-	_d - Vivaldi;´---- ok
-	_e - Tor;---- ok
-	_f - Brave.---- ok
+	_a - Google Chrome;---- ok (site: https://www.google.com/intl/pt-BR/chrome/)
+	_b - Opera;---- ok (site: https://www.opera.com/pt-br)
+	_c - Microsoft Edge;---- ok (site: https://www.microsoft.com/pt-br/edge?form=MA13FJ#evergreen)
+	_d - Vivaldi;---- ok (site: https://vivaldi.com/pt-br/download/)
+	_e - Tor;---- ok (site: https://www.torproject.org/download/)
+	_f - Brave.---- ok (site:https://brave.com/linux/#release-channel-installation) ou (gerenciador de aplicativos)
 -------------------------------------------------------------------------	
 #02_ Instalação do suporte ao TTF (TrueType Fonts)
-	a_ Ttf-mscorefonts (Gerenciador de Aplicativos)---- ok
+	a_ Ttf-mscorefonts (Gerenciador de Aplicativos)---- ok (gerenciador de aplicativos)
 -------------------------------------------------------------------------
 #03_ Instalação dos Pacote Office
-	_a - WPS Office for Linux (Recomendo via Gdebi)---- ok
-	_c - FreeOffice for Linux (Recomendo via Gdebi)---- ok
+	_a - WPS Office for Linux (Recomendo via Gdebi)---- ok (site: https://www.wps.com/)
+	_c - FreeOffice for Linux (Recomendo via Gdebi)---- ok (site:https://www.freeoffice.com/pt/servico/dicas-e-truques/linux)
+        ( terminal 
 	sudo -i
-wget -qO - https://shop.softmaker.com/repo/linux-repo-public.key | apt-key add -
-echo "deb https://shop.softmaker.com/repo/apt stable non-free" > /etc/apt/sources.list.d/softmaker.list
-apt update
-apt install softmaker-freeoffice-2021
+        wget -qO - https://shop.softmaker.com/repo/linux-repo-public.key | apt-key add -
+        echo "deb https://shop.softmaker.com/repo/apt stable non-free" > /etc/apt/sources.list.d/softmaker.list
+        apt update
+        apt install softmaker-freeoffice-2021
 
-sudo apt update
-sudo apt upgrade
-	_d - OnlyOffice Desktop for Linux (Recomendo AppImagem)---- ok
-	_e - Microsoft Teams for Linux (Recomendo via Gdebi)---- ok
-	_f - Skype for Linux (Recomendo via Gdebi)---- ok
-	_g - KolourPaint (Gerenciador de Aplicativo)---- ok
+        sudo apt update
+        sudo apt upgrade  )
+	_d - OnlyOffice Desktop for Linux (Recomendo AppImagem)---- ok (gerenciador de aplicativos)
+	_e - Microsoft Teams for Linux (Recomendo via Gdebi)---- ok (site:https://www.microsoft.com/pt-br/microsoft-teams/download-app) ou (gerenciador de aplicativos)
+	_f - Skype for Linux (Recomendo via Gdebi)---- ok (site: https://www.skype.com/pt-br/get-skype/) ou ( gerenciador de aplicativos)
+	_g - KolourPaint (Gerenciador de Aplicativo)---- ok (gerenciador de aplicativos)
 -------------------------------------------------------------------------
 #04_ Instalação dos Editores de Texto para Desenvolvimento
-	_a - Visual Studio Code for Linux (Recomendo via Gdebi)---- ok
-	_b - NotepadQQ for Linux (Gerenciador de Aplicativo)---- ok
-	_c - Atom for Linux (Recomendo via Gdebi)---- ok
-	_d - Sublime for Linux (Recomendo via Gdebi)---- ok
+	_a - Visual Studio Code for Linux (Recomendo via Gdebi)---- ok (site: https://code.visualstudio.com/docs/setup/linux) ou (gerenciador de aplicativos)
+	_b - NotepadQQ for Linux (Gerenciador de Aplicativo)---- ok (gerenciador de aplicativos)
+	_c - Atom for Linux (Recomendo via Gdebi)---- ok (site: https://atom.io/) ou (gerenciador de aplicativos)
+	_d - Sublime for Linux (Recomendo via Gdebi)---- ok (site: https://atom.io/) ou (gerenciador de aplicativos)
 -------------------------------------------------------------------------	 
 #05_ Instalação de Reprodutores de Música Editor de Áudio e Vídeo---- ok
-	_a - VLC VideoOnLan for Linux (Gerenciador de Aplicativo)---- ok
-	_b - Audacity (Gerenciador de Aplicativo)---- ok
-	_c - Kdenlive (Recomendo AppImagem)---- ok
+	_a - VLC VideoOnLan for Linux (Gerenciador de Aplicativo)---- ok (site:https://www.videolan.org/vlc/download-debian.html) ou (gerenciador de aplicativos) 
+	_b - Audacity (Gerenciador de Aplicativo)---- ok (gerenciador de aplicativos)
+	_c - Kdenlive (Recomendo AppImagem)---- ok (site: https://kdenlive.org/en/download/) ou (gerenciador de aplicativos)
