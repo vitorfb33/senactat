@@ -5,9 +5,9 @@ UTILIZAR o terminal - APT
 ATALHO: Ctrl + Alt + t
 ------------------------------------------		 		 
 atualizar via linha de comando 
-   sudo apt update  
-   sudo apt upgrade 
-   sudo apt full-upgrade 
-   sudo apt dist-upgrade
-   sudo apt autoremove
-   sudo apt autoclean 
+   sudo apt update---- ok 
+   sudo apt upgrade---- ok 
+   sudo apt full-upgrade---- ok 
+   sudo apt dist-upgrade---- ok
+   sudo apt autoremove---- ok
+   sudo apt autoclean---- ok 
