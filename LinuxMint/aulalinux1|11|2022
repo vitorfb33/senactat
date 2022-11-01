@@ -23,3 +23,9 @@ pesquisar: README.md?
 pesquisar: comando: git e git Clonar 
 pesquisar: editor VScode 
 (visual Studio Code)
+-------------------------------------------
+ abrir terminal 
+ sudo apt update ---- ok
+ sudo apt install git vim ---- ok
+ 
+ git clonar https://github.com/vitorfb33/senactat
