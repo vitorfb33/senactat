@@ -11,3 +11,8 @@ atualizar via linha de comando
    sudo apt dist-upgrade---- ok
    sudo apt autoremove---- ok
    sudo apt autoclean---- ok 
+-------------------------------------------
+github: edit profile
+github: -diretorio = repositorio 
+github: MICROSOFT = gnu/ Linux open source 
+                          (case sensitive)
