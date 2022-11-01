@@ -1,0 +1,13 @@
+data: 1|11|2022
+MINTUPDATE:
+UTILIZAR O mintupdate 
+UTILIZAR o terminal - APT
+ATALHO: Ctrl + Alt + t
+------------------------------------------		 		 
+atualizar via linha de comando 
+   sudo apt update  
+   sudo apt upgrade 
+   sudo apt full-upgrade 
+   sudo apt dist-upgrade
+   sudo apt autoremove
+   sudo apt autoclean 
