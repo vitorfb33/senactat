@@ -32,4 +32,3 @@ atualizar via linha de comando
   https://www.infowester.com/aptget1.php
   
   oque é SUDO: O Sudo é um comando utilizado no Sistema operacional, usado como super usuario para ter acesso a certo tipo de arquivos, softwares, pacotes.
-  
