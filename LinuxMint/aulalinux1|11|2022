@@ -16,3 +16,7 @@ github: edit profile
 github: -diretorio = repositorio 
 github: MICROSOFT = gnu/ Linux open source 
                           (case sensitive)
+
+pesquisar: Markdow - extensão
+pesquisar: Markdow.md ?
+pesquisar: README.md?
