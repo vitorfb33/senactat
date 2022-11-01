@@ -20,3 +20,6 @@ github: MICROSOFT = gnu/ Linux open source
 pesquisar: Markdow - extensão
 pesquisar: Markdow.md ?
 pesquisar: README.md?
+pesquisar: comando: git
+pesquisar: editor VScode 
+(visual Studio Code)
