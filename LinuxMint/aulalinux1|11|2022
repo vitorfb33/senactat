@@ -24,8 +24,12 @@ pesquisar: comando: git e git Clonar
 pesquisar: editor VScode 
 (visual Studio Code)
 -------------------------------------------
- forma de donwload dos repositorios 
+ forma de download dos repositorios:
  
+ site: github repositorio senactat 
+ ir até code 
+ download zip 
+ -------------
  abrir terminal 
  sudo apt update ---- ok
  sudo apt install git vim ---- ok
