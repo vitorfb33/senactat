@@ -27,7 +27,9 @@ pesquisar: README.md: Um arquivo readme (também read me, em português: leia-me
 site: https://pt.wikipedia.org/wiki/Readme
 site: https://blog.rocketseat.com.br/o-que-e-readme-e-porque-e-tao-importante/
 
-pesquisar: comando: git:O Git clone é um comando para baixar o código-fonte existente de um repositório remoto (como o Github, por exemplo). Quando você clonar um repositório, o código é copiado para a o seu computador e continua linkado ao original, como foi explicado lá na descrição do que é um sistema distribuído.
+pesquisar: comando: git:o Git é um sistema distribuído opensource de controle de versão – o mais popular do mundo, diga-se de passagem. 
+
+Apesar de ser usado para registrar o histórico de edições de qualquer tipo de arquivo, incluindo trabalhos de TCC e monografias de doutorado, a adoção mais ampla desta ferramenta se dá na área de desenvolvimento de software.
 
 site:https://blog.geekhunter.com.br/comandos-git-mais-utilizados/#:~:text=O%20Git%20clone%20%C3%A9%20um,o%20Github%2C%20por%20exemplo).&text=Quando%20voc%C3%AA%20clonar%20um%20reposit%C3%B3rio,que%20%C3%A9%20um%20sistema%20distribu%C3%ADdo.
 
