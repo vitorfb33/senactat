@@ -30,7 +30,7 @@ terminal Ctrl+ Alt + T
    cd (mudar de diretorio ) cd .. ( voltar 1 diretorio) 
    TAB (tabulador, Auto completar) 
    --------------------------------------------------------
-      git pull (verificar mudanças no github)
+ git pull (verificar mudanças no github)
 git add . ( aceitar as mudanças locais )
-git commit -m "Atualizacao"
-git push
+git commit -m "Atualizacao" ( aceitar as mudanças adicionadas)
+git push ( enviar para o github)
