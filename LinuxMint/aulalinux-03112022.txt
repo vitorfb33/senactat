@@ -29,5 +29,8 @@ terminal Ctrl+ Alt + T
    ls -lh (modo lista detalhado)
    cd (mudar de diretorio ) cd .. ( voltar 1 diretorio) 
    TAB (tabulador, Auto completar) 
-   
-   
+   --------------------------------------------------------
+      git pull (verificar mudanças no github)
+git add . ( aceitar as mudanças locais )
+git commit -m "Atualizacao"
+git push
