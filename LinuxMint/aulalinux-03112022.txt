@@ -1,0 +1,33 @@
+03/11/2022
+terminal Ctrl+ Alt + T
+   senac = seu usuario 
+   @ = concaternar 
+   Vitor!! = nome do computador
+   ---------------------------------------------------------
+   ~  = Alias Referencia ao seu Home             
+   $  = referencia ao usuario sem direito
+   #  =  super usuario ----> root
+   ---------------------------------------------------------
+   sudo -i ()
+   exit (sair, atalho Ctrl + D )
+   history (Historico de comandos)
+   ! (executar o comando na linha history )
+   clear (limpar a tela, atalho Crtl + L )
+   ---------------------------------------------------------
+   Pedir ajuda no Linux 
+   apt  (ajuda simples)
+   apt --help (ajuda resumida do camando)
+   man apt (manual do comando)
+   q (quit do manual do comando)
+   ---------------------------------------------------------
+   site: guiafoca https://www.guiafoca.org/guiaonline/inicianteintermediario/ pt-br
+   site: ss64  https://ss64.com/bash/ en
+   ---------------------------------------------------------
+   comandos de Diretorio e Arquivo 
+   git clone (clonar repositorio do github)
+   ls (listar arquivos ou diretorios)
+   ls -lh (modo lista detalhado)
+   cd (mudar de diretorio ) cd .. ( voltar 1 diretorio) 
+   TAB (tabulador, Auto completar) 
+   
+   
