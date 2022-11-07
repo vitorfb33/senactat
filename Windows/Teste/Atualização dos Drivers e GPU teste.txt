@@ -1,0 +1,50 @@
+atualizar drivers e GPU na maquina virtual
+Dispositivos (maquina virtual)
+clicar em
+inserir imagem de CD dos adicionais para convidado 
+Abrir o Explorador de Arquivos
+este computador
+unidade de CD VirtualBox Guest Additions
+instalar o VBoxWindowsAdditions
+-----------------------------------------------------
+ Micro real 
+ exemplo (B450M Steel Legend (asrock Placa mãe))
+ entrar no site do fabricante da placa mae 
+ https://www.asrock.com/MB/AMD/B450M%20Steel%20Legend/index.br.asp
+ clicar em suport
+ colocar o nome da marca da placa mãe B450M Steel Legend
+ download 
+ Selecionar Seu Sistema Operacional: ?
+ Baixar
+ AMD chipset driver ver:2.11.26.106
+ 
+ Realtek Driver de Rede ver:10039_03232020
+ 
+ AMD RAIDXpert2 utility ver:9.2.0.158
+ 
+ SATA Floppy Image_CC ver:9.3.0.296
+ 
+ (SATA Floppy Image_DID ver:9.3.0.296 NVMe_DID Supported AMD processors:
+(Picasso) - AMD Ryzen™ 3000 Series Desktop Processors with Radeon™ Graphics
+(Renoir) - AMD Ryzen™ 4000 Series Desktop Processors with Radeon™ Graphics
+(Cezanne) - AMD Ryzen™ 5000 Series Desktop Processors with Radeon™ Graphics)
+
+VGA driver ver:20.45.36_WHQL
+ 
+ ASRock Motherboard Utility ver:3.0.466
+
+ASRock Polychrome RGB ver:2.0.109
+
+depois de baixar o drivers precisa extrair a pastar para depois instalar (cada uma das pastas que voce baixou) depois reiniciar o seu micro 
+---------------------------------------------------------------------------------------------------------------------------------------------
+GPU 
+A ASUS TUF Gaming GeForce® GTX 1650 OC Edition 4GB GDDR6
+ir para o site do fabricante 
+https://www.asus.com/br/motherboards-components/graphics-cards/tuf-gaming/tuf-gtx1650-o4gd6-p-gaming/
+clicar em  Suport
+drivers e manuais 
+insira o nome do modelo de seu produto (A ASUS TUF Gaming GeForce® GTX 1650 OC Edition 4GB GDDR6) 
+drivers e software 
+baixar os drivers da gpu
+extrair a pasta  depois instalar o driver
+reiniciar o compuatdor 
