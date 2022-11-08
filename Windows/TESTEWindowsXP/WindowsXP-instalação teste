@@ -1,0 +1,31 @@
+07/11/2022
+instalação do WindowsXP
+site da iso: https://tecfoco.com.br/windows-xp-download-gratis-da-iso-em-portugues-br
+--------------------------
+Criar maquina virtual 
+WindosXP 32bits
+instalar o windowsxp
+particionar HD
+1 partição C: 4997 MB
+2 partição E: 2996 MB
+3 partição F: 2236 MB
+
+Formatar partição utilizando sistema de arquivos NTFS
+Formatar partição utilizando sistema de arquivos FAT 
+
+Qual a diferença dos dois 
+
+site: https://guialinux.uniriotec.br/sistemas-de-arquivos/
+
+NTFS: (New Technology File System) é o sistema de arquivos padrão do sistema operacional Microsoft Windows.
+São algumas características deste tipo de sistema: aceita volumes de até 2 TB;
+o tamanho do arquivo é limitado apenas pelo tamanho do volume; é um sistema de arquivos muito mais seguro que o FAT; NTFS podem se
+recuperar de um erro mais facilmente.
+
+(File Allocation Table) – é um sistema desenvolvido para o MS-DOS e usado em versões do Microsoft Windows.
+É suportado praticamente por todos os sistemas operacionais existentes. 
+Existem 3 versões do sistema: FAT (12 bits, usado pelos disquetes), FAT16 (para OS 16 bits ou 32 bits) e FAT32 (só para SO a 32 bits)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+utilizar sistema de arquivo FAT
+pressionar Enter para continuar a instalação 
+aguardar a instalção do windowsxp
