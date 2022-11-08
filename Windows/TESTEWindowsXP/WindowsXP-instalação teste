@@ -1,9 +1,16 @@
-07/11/2022
-instalação do WindowsXP
+08/11/2022
+instalação do WindowsXP.ISO
+usar na 
+Maquina virtual
+
 site da iso: https://tecfoco.com.br/windows-xp-download-gratis-da-iso-em-portugues-br
---------------------------
+--------------------------------------------------------------------------------------------
 Criar maquina virtual 
 WindosXP 32bits
+configuração 
+rede 
+conectado a: NAT / muda para  rede interna
+---------------------------------------------------------------------------------------------
 instalar o windowsxp
 particionar HD
 1 partição C: 4997 MB
@@ -29,3 +36,20 @@ Existem 3 versões do sistema: FAT (12 bits, usado pelos disquetes), FAT16 (para
 utilizar sistema de arquivo FAT
 pressionar Enter para continuar a instalação 
 aguardar a instalção do windowsxp
+nome do computador:?
+senha:
+criar usuario :?
+esperar o windows carregar 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+atualizar drivers 
+ir até dispositivos 
+inserir imagem do CD dos adicionais para convidado 
+depois ir até meu computador 
+instalar o VirtualBox Guest Additions
+---------------------------------------------------------------------------------------------------------------------------------------------------
+clonar windowsxp
+clone do WindowsXP
+abrir as duas maquina virtual 
+abrir o cmd(prompt de comando)
+usar o comando 
+ipconfig /all
