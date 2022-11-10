@@ -1,0 +1,79 @@
+9/11/2022
+desafio da aula de hoje 
+
+abrir a maquina virtual 
+windowsxp 32bits ou 64bits
+-----------------------------
+mudar os nomes dos micros
+
+meu computador (clicar com o botão direito do mause em cima do meu computador)
+propriedades 
+nome do computador
+alterar 
+-----------------------------
+desativar o firewall dos dois windowsxp
+
+painel de controle 
+conexões de rede e de internet 
+firewall do windows
+desativar o firewall (firewall ativado não é seguro) 
+desativado
+-----------------------------
+abrir o CMD
+usar o comando 
+ping : usar o ip do outro micro para testar 
+(serve para testar a conexão com outras maquinas 
+na rede, e testar a conexão com a internet)
+-----------------------------
+mudar ip para estatico
+(fazer isso nos dois micros)
+
+painel de controle
+conexões de rede e de internet
+conexões de rede
+conexão local (clicar com botão direito do mause)
+propriedades 
+protocolo TCP/IP (clicar duas vezes)
+mudar o ip do computador (usando a classe c) exemplo 192.168.0.1 
+(não pode ter dois ip iguais na mesma rede)
+--------------------------------
+ativar o mensageiro (fazer isso nos dois micros)
+
+meu computador (clicar com botão direto do mause 
+gerenciar 
+servicos e aplicativos 
+serviço
+mensageiro 
+tipo de inicialização (mudar para automatico) aplicar
+iniciar (está ativado)
+ok
+-----------------------------------
+mandar uma mensagem para outro micro da rede
+(comando utilizado no Windows XP , 2000 e NT)
+
+net sand :serve para mandar mensagem para outro micro
+net sand :(colocar o ip /exemplo 192.168.0.1) ou (nome da maquina /exemplo pcvitor) ou (* serve para mandar mensagem para todos da mesma rede) escrever alguma mensagem
+-------------------------------------------------------
+ativar o firewall de novo 
+(nos dois micros)
+
+painel de controle 
+conexões de rede e de internet 
+firewall do windows
+ativar
+------------------------------------------------------
+precebe-se que não vai funcionar o comando ping em outra maquina porque o firewall está ativado 
+mesmo com ele ativado tem como, é só permitir solicitação de eco de entrada 
+------------------------------------------------------
+permitir solicitação de eco de entrada 
+
+painel de controle
+conexões de rede e de internet
+firewall do windows 
+avançado
+ICMP  (clicar em configurações)
+permitir solicitação de eco de entrada (habilitar a caixinha)
+
+exeções 
+ativar o compartilhamento de arquivos e impresora (para continuar trocando msg com outro micro)
+-------------------------------------------------------
