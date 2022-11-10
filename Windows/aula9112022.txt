@@ -1,0 +1,24 @@
+9/11/2022
+desafio da aula de hoje 
+
+abrir a maquina virtual 
+windowsxp 32bits ou 64bits
+-----------------------------
+mudar os nomes dos micros
+
+meu computador (clicar com o botão direito do mause em cima do meu computador)
+propriedades 
+nome do computador
+alterar 
+-----------------------------
+desativar o firewall dos dois windowsxp
+
+painel de controle 
+conexões de rede e de internet 
+desativar o firewall 
+-----------------------------
+abrir o CMD
+usar o comando 
+ping:usar o ip do outro micro (serve para testar a conexão com outras maquinas 
+na rede, e testar a conexão com a internet)
+
