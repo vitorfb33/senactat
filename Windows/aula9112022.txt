@@ -21,4 +21,27 @@ abrir o CMD
 usar o comando 
 ping:usar o ip do outro micro (serve para testar a conexão com outras maquinas 
 na rede, e testar a conexão com a internet)
+-----------------------------
+mudar ip para estatico
+(fazer isso nos dois micros)
+
+painel de controle
+conexões de rede e de internet
+conexões de rede
+conexão local (clicar com botão direito do mause)
+propriedades 
+protocolo TCP/IP (clicar duas vezes)
+mudar o ip do computador (usando a classe c) exemplo 192.168.0.1 
+(não pode ter dois ip iguais na mesma rede)
+--------------------------------
+ativar o mensageiro (fazer isso nos dois micros)
+
+meu computador (clicar com botão direto do mause 
+gerenciar 
+servicos e aplicativos 
+serviço
+mensageiro 
+tipo de inicialização (mudar para automatico) aplicar
+iniciar (está ativado)
+ok
 
