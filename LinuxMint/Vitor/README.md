@@ -15,13 +15,13 @@ de arquivos e diretorios, basico de comandos de rede ( similar as aulas da micro
 segunda etapa :      windows                GNU/Linux
 redes (TCP/IPv4)     ipconfig               ifconfig
                      ipconfig / all         route -n
-					                                  resolvectl
-					           nslookup				        nslookup
-					           ping                   ping
-					           ping -t
+					    resolvectl
+		     nslookup	            nslookup
+		     ping                   ping
+		     ping -t
 
 terceira etapa:     windows                GNU/linux
                     dir,ls                 pwd
-					          cd                     cd
-					          md                     mkdir   
-					                                 touch
+		    cd                     cd
+		    md                     mkdir   
+					   touch.README.md
