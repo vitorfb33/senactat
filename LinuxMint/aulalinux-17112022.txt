@@ -1,0 +1,81 @@
+objetivo da atividade de hoje; 17/11/2022
+
+primeira etapa: Iniciar a Maquina virtual do linux mint
+
+segunda etapa: finalização dos conceitos basico de:
+1 bash/shell
+2 comandos de manipulação de arquivos e diretórios
+3 comandos de redes (linux mint e Windows XP)
+4 git e github
+--------------------------------------------------------------
+terceira etapa:
+
+criar um diretorio 
+comando 
+mkdir (workgroup) (criar um diretorio)
+
+verificar 
+ls -lh
+----------------------------------------
+entrar no diretorio
+cd workgroup
+
+verificar 
+ls -lh 
+------------------------------------
+criar um arquivo 
+touch READ.me 
+
+verificar
+ls -lh 
+------------------------------------
+criar arquivo
+touch REDE.txt
+
+verificar ls -lh 
+------------------------------------
+renomear arquivo 
+mv -v REDE.txt RedeWindows.txt
+
+verificar
+ls -lh
+------------------------------------
+copiar o conteudo do arquivo 
+cp -v RedeWindows.txt RedeLinux.txt
+
+verificar 
+ls -lh 
+------------------------------------
+comando de imprimir mensagem na tela e criar o arquivo 
+echo Senac tatuaṕe > Senac.txt 
+
+vereficar
+ls -lh 
+------------------------------------
+comando para listar o conteudo do arquivo texto 
+cat -n Senac.txt
+------------------------------------
+cat/etc/services
+------------------------------------
+lista o numero de linhas que tem um arquivo 
+cat -n /etc/service
+------------------------------------ 
+lista as 10 primeiras linhas de arquivo 
+head /etc/services
+------------------------------------
+lista as 10 utimas linhas de arquivo 
+tail /etc/services
+------------------------------------
+mostra as 20 primeiras linhas do arquivo
+head -n20 /etc/services
+------------------------------------
+mostra as 20 ultimas linhas do arquivo 
+tail -n20 /etc/service
+------------------------------------
+quantas linhas eu quero visualizar 
+cat -n /etc/service | head n-20
+-------------------------------------
+desafio de hoje
+mostras da linha 100 até 200
+
+cat -n /etc/service | head -n200 | tail -N101 
