@@ -1,0 +1,44 @@
+WindowsXP
+desafio de hoje 16/11/2022
+pasta compartilhada , mapeamento e acesso remoto
+------------------------------------
+os computadores precisam estar na mesma rede (exemplo 192.168.0.1, 192.168.0.2)
+------------------------------------
+meu computador 
+disco local C:
+criar uma pasta 
+colocar algum conteudo dentro (exemplo, Teste1 no documento de texto dentro da pastas)
+------------------------------------
+clicar com o botão direito do mause em cima da pasta criada
+compartilhamento e segurança 
+aceitar o termos para compartilhamento 
+
+clicar em compartilhar está pasta 
+(você pode decidir se o usuario tem a permissão de alterar os arquivos da 
+pasta compartilhada ou só visualizar ou imprimir)
+-------------------------------------
+para outra maquina acessar a pasta compartilhada 
+vai em iniciar / com a maquina que não tem a pasta compartilhada 
+abrir o executar / na barra de pesquisa do executar colocar o ip do micro  
+ou o nome do PC  (exemplo PCgabriel ou o ip 192.168.0.1)
+-------------------------------------
+você estara vendo a pasta compartilhada 
+clicar com o botão direito do mause 
+depois 
+Mapear unidade de rede 
+unidade (escolher do Z até o A) isso serve para mapear o arquivo para 
+não ficar colocando o nome ou ip no executavel 
+--------------------------------------
+acesso remoto 
+os computadores precisam estar na mesma rede 
+
+iniciar
+meu computador/ clicar com o botão direito do mause 
+propriedades
+remoto 
+permitir que usuarios se conectem remotamente( ativar)
+aplicar 
+ok 
+tentar fazer o acesso nas duas maquinas 
+----------------------------------------
+aula finalizada 
