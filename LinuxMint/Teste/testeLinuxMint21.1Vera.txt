@@ -1,0 +1,112 @@
+aula teste 21/12/2022 maquina virtual
+-------------------------------------------------------------------------------
+ 
+instalar o Linux Mint 21.1  codinome vera interface grafica Cinnamon Edition
+(https://linuxmint.com/edition.php?id=302) 
+-------------------------------------------------------------------------------
+MAQUINA VIRTUAL
+
+Novo
+
+Nome da maquina virtual
+Linuxmint21.1
+
+Colocar a iso na maquina virtual  (SITE  https://linuxmint.com/edition.php?id=302)
+
+ISO image (linuxmint-21.1-cinnamon-64bit)
+skip unattended installation = (pular instalação autônoma)
+
+memoria base 
+4096
+
+processors 
+2
+
+memoria HD/SSD
+50 GB
+
+FINALIZAR
+----------------------------------------------------------------------------------
+INSTALAÇÂO DO LINUXMINT21.1
+
+start linux  mint 21.1 Cinnamon 64-bit (apertar ok )
+
+clicar no CD
+install linux mint 21.1
+(continuar)
+
+escolher edioma 
+português do Brasil
+(continuar)
+
+layout do teclado
+portugues do brasil abnt2
+(continuar)
+
+clicar na caixa
+instalar codecs multimidia 
+(continuar)
+
+apagar disco e reinstalar o linux mint
+(instalar agora)
+(continuar)
+
+onde você esta
+são paulo
+(continuar)
+
+colocar seu nome
+?
+
+nome do computador
+?
+
+nome do usuario do computador
+?
+
+escolher uma senha 
+?
+
+solicitar minha senha para entrar 
+
+continuar 
+(esperar a instalação do linux mint)
+reiniciar o linuxmint
+remover o pendrive e pressionar enter ( como é na maquina virtual é só apertar enter)
+------------------------------------------------------------------------------
+proxima etapa inserir imagem do CD dos adicionais para convidado
+
+dispositivo (esta no canto superior da maquina virtual)
+inserir imagem do CD dos adicionais para convidado
+
+executar
+
+colocar sua senha
+
+aguardar
+
+aceitar a instalação 
+yes
+
+reiniciar a maquina virtual 
+--------------------------------------------------------------------------------
+proxima etapa, atualização de softwere e segurança e do kernel
+
+vamos usar o shell 
+atualizar por comandondo 
+
+sudo apt update
+digitar sua senha
+
+sudo apt upgrade
+aceitar a instalação
+yes or not 
+digitar y
+
+sudo apt full-upgrade
+digitar sua senha 
+
+sudo apt dist-upgrade
+
+sudo apt autoclean 
+-----------------------------------------------------------------------------------
