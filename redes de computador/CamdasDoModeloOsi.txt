@@ -1,0 +1,43 @@
+30/12/2022
+Aula de hoje, revisão da camadas do modelo OSI 
+----------------------------------------------------
+camada 7:Aplicação 
+camada 6:Apresentação
+camada 5:Sessão
+camada 4:Transporte
+camada 3:Rede
+camada 2:Link de dados
+camada 1:Fisica
+-----------------------------------------------------
+
+
+7 Aplicação : A camada de aplicação faz a interface entre o protocolo de comunicação e o aplicativo que pediu ou recebera a informação
+atraves da rede 
+(aplicação = para quem pediu o arquivo ou recebera o arquivo)
+
+
+6 Aprensentação : A camada de Apresentação , tambem chamanda camada de tradução, converte o formato do dado recebido pela camada de aplicação em um 
+formato comum a ser usado na trasmissão desse dado, ou seja, um formato entendido pelo protocolo usado 
+(apresentação = representação dos dados)
+
+5 Sessão : A camada de Sessão permite que duas aplicações em computadores diferentes estabeleçam uma sessão de comunicação.
+Nesta sessão, essas aplicações definem como será feita a trasmissão de dados e coloca marcações nos dados que estão sendo transmitidos.
+(Sessão = faz a comunicação entre os computadores)
+
+4 Transporte : A camada de transporte é responsável por pegar os dados enviados pela camada de Sessão e dividi-los em pacotes que serão transmitido pela rede,
+ou, melhor dizendo repassados para a camada de Rede. No receptor, a camada de transporte é responsável por pegar os pacotes recebidos da camada de rede e remontar 
+o dado original para envia-lo à camada de Sessão.
+(Transporte = transporte entre os dados )
+
+3 Rede : A camada de Rede é responsavel pelo endereçamento dos pacotes, convertendo enderenços lógicos em endereços fisicos, de forma que os pacotes consigam chegar
+corretamente ao destino.
+(Rede = endereçamento dos pacotes)
+
+2 Link de Dados : A camada de Link de Dados (também chamada camada de Enlace) pega os pacotes de dados recebidos da camada de Rede e os transforma em quadros que
+serão trafegados pela Rede, adicionando informações como endereço da placa de rede de origem, o endereço da placa de rede de destino.
+(Link de Dados = é a origem e destino dos pacotes)
+
+1 Fisica : A camada fisica pega os quadros enviados pela camada de Link de Dados e os transforma em sinais compativeis com o meio onde os dados deverão ser
+transmitido. Se o meio for eletrico, essa camada converte os 0s e 1s dos quadros em sinais eletricos a serem trasnmitido pelo cabo.
+Se o meio for óptico (uma fibra óptica), essa camada converte os 0s e 1s dos quadros em sinais luminosos e assim por diante, dependendo do meio de transmissão de dados
+(Fisica = como os dados vão ser transmitidos)
