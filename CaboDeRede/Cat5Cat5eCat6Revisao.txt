@@ -1,0 +1,39 @@
+30/12/2022
+revisão da aula de cabos de redes 
+
+Um cat 5— ou categoria 5 (5e ou 6) — é um cabo Ethernet ou cabeamento usado para oferecer suporte a outras redes de computador.
+Ele pode transmitir sinais de vídeo e telefonia, além dos dados padrão de computador.
+O cat 5 é geralmente o requisito mínimo exigido para VoIP hospedado.
+A designação de número descreve quantos dados podem ser transmitidos pelo cabo: o cat 5 chega a velocidades de 10/100 Mbps a uma largura de banda de até 100 MHz.
+o cat 5e a velocidades de 1000 Mbps e o cat 6 a 10 gigabits por até 250 MHz. O cabo tem pontas RJ45 em ambas as extremidades.
+
+tipos de normas para cabo de rede 
+Que são elas, 568A e 568B.
+Essas são as sequências segundo a norma ABNT NBR 14565-2007 que você pode ter maior performance para transmissão de internet.
+Ou seja é muito importante a utilização de uma das Sequências.
+Se você estiver utilizando uma sequência, você deve sempre utilizar este mesmo padrão por toda a instalação,
+nunca mude da Sequência 568A para 568B no meio de uma montagem, pois você acabar fazendo um cabo Crossover
+
+site: https://www.goto.com/pt/resources/glossary/cat5-cat5e-cat6#:~:text=Um%20cat%205%E2%80%94%20ou%20categoria,m%C3%ADnimo%20exigido%20para%20VoIP%20hospedado.
+--------------------------------------------------------------------------------------------------------------
+Vamos a Sequência 568A, onde começamos pelo par branco verde:
+
+Branco Verde
+Verde
+Branco Laranja
+Azul
+Branco Azul
+Laranja
+Branco Marrom
+Marrom
+--------------------------------------------------------------------------------------------------------------
+Vamos a Sequência 568B onde começamos pelo par Brnaco Laranja
+
+Branco Laranja
+Laranja
+Branco Verde
+Azul
+Branco Azul
+Verde
+Branco Marrom
+Marrom
