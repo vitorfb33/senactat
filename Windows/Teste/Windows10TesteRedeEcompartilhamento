@@ -1,0 +1,134 @@
+Windows10 desafio de hoje 29/12/2022
+mudar o nome do computador,  rede local, compartilhamento de arquivos e acesso remoto 
+----------------------------------------------------------------------------------------
+mudar o nome do computador
+ 
+painel de controle 
+sistema e segurança
+sistema  
+configurações avançadas do sistema
+nome do computador
+ 
+clicar em alterar 
+
+nome do computador  ?
+grupo de trabalho   ?
+reiniciar a maquina 
+
+(nome dos computadores alterados)
+---------------------------------------------------------------
+configurar rede local 
+
+painel de controle 
+rede e internet
+central de rede e compartilhamento 
+clicar na Ethernet
+propriedades
+
+clicar duas vezes em 
+protocolo IP Versão 4 (tcp/IPv4) 
+
+mudar o Endereço IP: 192.168.0.1
+mascara de sub-rede: 255.255.255.0
+ok
+
+(lembresse de fazer isso nas duas maquinas/
+ a segunda maquina não pode ter o numero ip igual da primeira maquina/ 
+ segunda maquina exemplo 192.168.0.2 )
+numeros ip configurados)
+
+
+habilitar o echo (nas duas maquinas)
+
+painel de controle 
+programas 
+ativar ou desativar recursos do Windows
+
+clicar no quadrado onde está escrito 
+Serviços TCPIP simples (echo, daytime etc)
+ok
+
+(rede local configurada)
+-------------------------------------------------------------------
+compartilhamento de arquivos 
+
+habilitar compartilhamento 
+
+painel de controle 
+rede e internet
+central de rede e compartilhamento
+alterar as configurações de compartilhamento avançadas 
+
+Particular
+ativar descoberta de rede 
+ativar compartilhamento de arquivo e impressora 
+
+Convidado ou Público(perfil atual)
+ativar descoberta de rede 
+ativar compartilhamento de arquivo e impressora 
+
+Todas as Redes
+ativar compartilhamento para que qualquer pessoa com acesso à rede
+possa ler e gravar arquivos nas pastas públicas 
+
+desativar compartilhamento protegido por senha 
+
+(vamos criar algum arquivo para testar)
+abrir o explorador de arquivos 
+este computador 
+disco local 
+criar uma pasta (colocar um documento de texto/ escrver algo dentro)
+
+clicar com o botão direito em cima da pasta que criou 
+propriedades
+compartilhamento  
+
+clicar em compartilhar
+adicionar todos
+
+clicar em  Compartilhamento Avançado
+clicar na caixa/ compartilhar a pasta  
+permissões 
+adicionar/ todos
+marcar a caixa 
+controle total 
+alteração 
+leitura
+ 
+clicar em ok 
+depois clicar em  aplicar 
+e clicar em ok 
+
+para outro micro acessar o arquivo 
+vai na barra de pesquisa do windows escrever executar
+(precisa colocar barra barra) \\nome do computador ou numero ip do computador 
+(compartilhamento feito) (testar nas duas maquinas o mesmo procedimento)
+--------------------------------------------------------------------------------
+Acesso remoto 
+(pra isso precisamos colocar senhas nas duas maquinas)
+ 
+painel de controle 
+contas de usuário 
+clicar em alterar o tipo de conta 
+clicar no seu usuario 
+alterar senha
+colocar uma senha ? 
+
+ativar o acesso remoto (fazer isso nos dois micros)
+painel de controle 
+sistema e segurança
+sistema  
+configurações avançadas do sistema
+remoto
+permitir conexões remotas com este computador 
+aplicar  
+ok
+
+ir na barra de pesquisa do windows 
+escrever 
+conexão de area de trabalho remota 
+depois colocar o nome do computador que você quer acessar 
+vai pedir o nome do usuario e senha do outro computador 
+colocar 
+e conectar 
+(acesso remoto feito) 
