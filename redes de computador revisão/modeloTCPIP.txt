@@ -48,3 +48,5 @@ CAMADA DE INTERFACE COM A REDE
 Está camada, que é equivalente às camadas 1 e 2 do modelo OSI, é responsável por enviar o datagrama recebido pela camada de internet em forma de quadros através
 da Rede.
 adicionando informações como endereço de placa de rede de origem e endereço da placa de rede de destino e como sera trasmitido
+
+livro: Redes de computadores curso completo / autor do livro: Gabriel Torres 
