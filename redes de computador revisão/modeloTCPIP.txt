@@ -1,0 +1,50 @@
+31/12/2022
+aula de hoje revisão TCP/IP
+-------------------------------------
+
+O protocolo TCP/IP atualmente é o protocolo mais usado em redes locais. Isso se deve basicamente à popularização da internet, a rede nmundial de computadores,
+já que esse protocolo foi criado para ser usado na internet. Mesmo os sistemas operacionais de redes, que no passado só utilizavam o seu protocolo proprietario 
+(como Windows NT com o seu NetBEUI e o Netware com o seu IPX/SPX), hoje suportam o protocolo TCP/IP.
+
+Uma das grandes vantagens do TCP/IP em relação a outros protocolos existentes é que ele é rotealvel, isto é, foi criado pensando em redes grandes e de longa distância,
+onde pode haver vários caminhos para o dado atingir o computador receptor
+
+O TCP/IP é, na realidade, um conjunto de protocolos.
+Os mais conhecidos dão justamente o nome desse conjunto:  TCP(Transmission Control Protocol, protocolo de Controle da transmissão) e IP(Internet Protocol), que 
+operam nas camadas Transporte e Internet respectivamente. mas eles não são os únicos.
+
+A arquitetura do TCP/IP ele é um protocolo de quatro camadas elas fazem correlação das camadas TCP/IP com as camadas do modelo OSI
+
+
+Modelo OSI                         TCP/IP 
+                        
+7 Aplicação            |              
+6 Apresentação         |         Aplicação 
+5 Sessão               | 
+                       -----------------------------
+4 Transporte           |         Trasnporte       
+3 Rede                 |         Internet
+                       -----------------------------
+2 Linke de dado        |    Interface com a Rede 
+1 Fisisca              |   
+
+
+
+TCP/IP
+
+CAMADA DE APLICAÇÂO
+A Camamda de Aplicação  equivale ás camadas 5, 6 e 7 do modelo OSI e faz a comunicação entre os aplicativos e o protocolo de transporte. 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CAMADA DE TRANSPORTE
+A Camada de Transporte do TCP/IP é um equivalente direto da camada de transporte (Camada 4) do modelo OSI
+está camada é responsável por pegar os dados enviados pela camada de aplicação e transformá-las em pacotes, a serem repassados para a camada de internet.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CAMADA de Internet
+A camada de Internet do modelo TCP/IP é equivalente à camada 3 (Rede) do modelo OSI.
+Ela faz a mesma coisa que a camada de rede do modelo OSI 
+é responsável pelo endereçamento dos pacotes, convertendo endereços lógicos em endereços fisicos, de forma que os pacotes consigam chegar corretamente ao destino.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CAMADA DE INTERFACE COM A REDE 
+Está camada, que é equivalente às camadas 1 e 2 do modelo OSI, é responsável por enviar o datagrama recebido pela camada de internet em forma de quadros através
+da Rede.
+adicionando informações como endereço de placa de rede de origem e endereço da placa de rede de destino e como sera trasmitido
