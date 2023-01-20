@@ -1,0 +1,48 @@
+aula de hoje 19/01/2023
+
+Primeira etapa: criação do Pendrive utilizando o Rufus
+				VOU MOSTRAR O PROCEDIMENTO EM SALA
+
+Segunda etapa.: pegar o notebook que você já usou na aula
+				de cabeamento que está com o seu nome
+				pegar a fonte
+				pegar o cabo de rede
+				pegar se NECESSÁRIO mouse (somente se o 
+				Touchpad estiver com problema)
+				
+Terceira etapa: acessar a BIOS dos Notebook Itautec
+				pressionar F2
+
+Quarta etapa..: documentar o Hardware do Notebook
+				Fabricante..:
+				Modelo......:
+				Processador.:
+				Memória.....:
+				Hard Disk...:
+				
+Quinta etapa..: bootar o Linux Mint 21.1 Vera
+				pressionar F12 
+				selecionar 
+
+Sexta etapa...: remover todas as partições existentes
+				Menu, 
+					Gparted, 
+						limpar todas as partições
+				
+Sétima etapa..: instalar o Linux Mint padrão
+				Nome Completo: SENAC Tatuapé
+				Usuário: senac
+				Senha: 123@senac
+
+Oitava etapa..: fazer o update do Linux Mint
+				primeiro: UTILIZAR O MINT UPDATE
+				segundo.: utilizar o Apt no Terminal
+						  Atalho: Ctrl + Alt + T
+								  sudo apt update
+								  sudo apt upgrade
+								  sudo apt full-upgrade
+								  sudo apt dist-upgrade
+								  sudo apt autoremove
+								  sudo apt autoclean
+								  sudo apt clean
+								  sudo reboot
