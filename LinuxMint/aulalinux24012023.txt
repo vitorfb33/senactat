@@ -1,0 +1,22 @@
+Objetivo da atividade de hoje: 24/01/2023
+
+Primeira etapa: pegar o NOTEBOOK que você já usou na última aula;
+				pegar uma fonte;
+				pegar um cabo de rede;
+				pegar se NECESSÁRIO mouse (somente se o Touchpad estiver com problema).
+
+Segunda etapa.: fazer o update do Linux Mint (se necessário)
+				primeiro: UTILIZAR O MINT UPDATE
+				segundo.: Atalho: Ctrl + Alt + T
+							  sudo apt update
+							  sudo apt upgrade
+							  sudo apt full-upgrade
+							  sudo apt dist-upgrade
+							  sudo apt autoremove
+							  sudo apt autoclean
+								  
+Terceira etapa: Github: https://github.com/vaamonde/dell-linuxmint
+				Instalar o VirtualBOX 7.0
+				Instalar o VMware Workstation
+				Instalar o Powershell
+				Instalar o Visual Studio Code
