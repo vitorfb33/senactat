@@ -1,0 +1,20 @@
+desafio 28/01/2023
+fazer o update do Linux Mint
+
+ Atalho: Ctrl + Alt + T
+ 
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt dist-upgrade
+sudo apt autoremove
+sudo apt autoclean						  
+--------------------------------------------------------------								  
+Instalar o VirtualBOX 7.0; feito
+Instalar o VMware Workstation; feito
+Instalar o Powershell; feito
+Instalar o Visual Studio Code; feito
+Instalar o WPS Office; feito 
+Configurar o Swapoff;feito 
+
+
