@@ -27,3 +27,4 @@ Terceira etapa: Github: https://github.com/vaamonde/dell-linuxmint
 				#09_ Instalar o Eclipse IDE;
 				#10_ Instalar o GNS3
 				#11_ Instalar o Cisco Packet Tracer;
+                                     Instalar o Tilix e o Oh-My-ZSH;
