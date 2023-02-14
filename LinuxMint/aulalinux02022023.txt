@@ -1,0 +1,42 @@
+Objetivo da atividade de hoje: 02/02/2023
+
+Primeira etapa: pegar o NOTEBOOK que você já usou na última aula;
+				pegar uma fonte;
+				pegar um cabo de rede;
+				pegar se NECESSÁRIO mouse (somente se o Touchpad estiver com problema).
+
+Segunda etapa.: fazer o update do Linux Mint (se necessário)
+				primeiro: UTILIZAR O MINT UPDATE
+				segundo.: Atalho: Ctrl + Alt + T
+							  sudo apt update
+							  sudo apt upgrade
+							  sudo apt full-upgrade
+							  sudo apt dist-upgrade
+							  sudo apt autoremove
+							  sudo apt autoclean
+
+Terceira etapa: aguardar os procedimentos da aula de hoje.
+
+
+
+
+
+
+
+
+							  
+Quarta etapa: Github: https://github.com/vaamonde/dell-linuxmint
+				#01_ Instalar o VirtualBOX 7.0;	
+				#02_ Instalar o VMware Workstation;
+				#03_ Instalar o Powershell;
+				#04_ Instalar o Visual Studio Code;
+				------------------------------------
+				#05_ Instalar o WPS Office;
+				#06_ Configurar o Swapoff;
+				#07_ Instalar o EdrawMax;
+				#08_ Instalar o Eclipse IDE;
+				#09_ Instalar o Cisco Packet Tracer;
+				#10_ Instalar o GNS3;
+				#11_ Instalar o Tilix e o Oh-My-ZSH;
+				------------------------------------
+				
