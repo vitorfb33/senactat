@@ -1,0 +1,35 @@
+aula de hoje / 28/02/2023
+
+primeira etapa: abrir o cisco 
+efetuar login  
+
+segunda etapa: acessar o arquivo da rede publica do senac 
+infraestrutura de rede
+
+terceira etapa: abrir visual code	
+
+quarta etapa:  configurar cisco desabilitar 2 e habilitar 1 
+
+
+options 
+
+preferences 
+
+desmarcar show divece model labels
+          
+		  show divece name labels
+
+		  
+		  show/ride		  
+		  
+marcar  show wireless boundary
+--------------------------------------------
+adicionar 4 computador 
+pegar um switch 2960
+conectar os computadores 
+
+pegar 3 computador 
+1 switch 
+1 servidor 
+depois configurar 
+
