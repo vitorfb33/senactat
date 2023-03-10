@@ -1,0 +1,33 @@
+aula de hoje 09/03/2023
+
+pegar o cabo console e configurar 
+ir para o terminal 
+
+!: modo EXEC é representado pelo simbolo maior >
+
+!modo EXEC privilegiado 
+ enable para se tornar root
+
+!para sair do modo EXEC privilegiado
+disable 
+exit 
+
+
+!TAB - tecla TAB/ o tab é um auto complemento 
+
+
+!? - tecla SHIFT ? ajuda 
+di?
+
+!modo de configuração global 
+configure terminal 
+switch(config)
+
+!configurar o hostname 
+hostname sw-l2-2960-1
+
+!habilitar senhas cripitografadas 
+service password-encryption
+
+!salvando as configuraçoes 
+copy running-config startup-config
