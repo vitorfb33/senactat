@@ -1,0 +1,52 @@
+Protocolo
+ É um  conjunto de regras de como as coisas devem acontecer na Internet
+Quando falamos dos protocolos de Internet, estamos nos referindo aos principais serviços que usamos
+Protocolo de rede, protocolo acesso remoto 
+https://www.hostmidia.com.br/blog/protocolos-de-internet/
+IP
+O Protocolo é conjunto de regras, para roteamento e endereçamento de pacotes de dados para que eles possam viajar pelas redes e chegar ao destino correto
+TCP-IP
+TCP/IP é um conjunto de protocolos que possibilita a comunicação entre computadores e servidores, formando a Internet. Ele combina o Protocolo de Controle de Transmissão (TCP), responsável pela transmissão de dados, com o Protocolo de Internet (IP), que identificar os computadores e servidores.
+Pacotes Novell
+é um tipo de sistema operacional de rede. Ele fornece amplos serviços de rede, desde arquivos fáceis e simples até usuários de rede, dados, segurança e até gerenciamento de recursos. Geralmente é projetado para redes ou sistema operacional de
+snmp
+Pacotes Apple
+
+
+ICMP
+É um protocolo para determinar a disponibilidade da rede 
+E gerenciar o trafego  
+Faz o diagnostico de problemas de conectividade da rede ou transferência de dados entre dispositivo 
+
+Ping da Morte
+É um ataque em que o invasor tenta interromper uma maquina  enviado um pacote maior 
+Que o tamanho máximo permitido, fazendo com que a maquina trave 
+
+Interface de Rede
+É um hardaware usado para que o computador se conecte á rede 
+Cada interface de rede tem um endereço único chamado mac
+
+LAN: lan é uma rede local que interligam computadores dentro de um mesmo espaço físico 
+WAN: wan  são  de longas distancias , é um grande rede que pode englobar um pai ou continente 
+MAN: é uma rede de área metropolitana é similar a uma rede local (lan), mas abrange um cidade ou campus inteiro 
+Ela é formada a partir de da conexão de varias Lans  
+ RAN: é uma rede de uma região geográfica especifica,  são menores que redes wan 
+ CAN: rede que interliga computadores em diferentes edificações de um mesmo complexo institucional ex: universidade, condomínios 
+ PAN: é uma rede onde é utilizado tecnologia de redes sem fio para interligar vários dispositivos variados 
+Tem uma área bem reduzida
+ SAN:é uma rede que tem como objetivo a ligação entre vários computadores e dispositivos de armazenamento 
+Diferenças entre LAN e WAN em relação ao Hardware e Largura de Banda.
+Colisão (CSMA-CD)
+HUB
+Switch
+Router
+O que acontece quando o Router não conhece e o caminho?
+O Que acontece quando um Pacote não chega até o destino?
+TCP: 
+UDP
+Proxy :  
+Quais as Funcões do PROXY:  
+Firewall: 
+Portas 80, 110, 25, 21, 23
+DNS
+DHCP
