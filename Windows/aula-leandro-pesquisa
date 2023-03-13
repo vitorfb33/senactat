@@ -6,9 +6,13 @@ https://www.hostmidia.com.br/blog/protocolos-de-internet/
 IP
 O Protocolo é conjunto de regras, para roteamento e endereçamento de pacotes de dados para que eles possam viajar pelas redes e chegar ao destino correto
 TCP-IP
-TCP/IP é um conjunto de protocolos que possibilita a comunicação entre computadores e servidores, formando a Internet. Ele combina o Protocolo de Controle de Transmissão (TCP), responsável pela transmissão de dados, com o Protocolo de Internet (IP), que identificar os computadores e servidores.
+TCP/IP é um conjunto de protocolos que possibilita a comunicação entre computadores e servidores, formando a Internet.
+Ele combina o Protocolo de Controle de Transmissão (TCP), responsável pela transmissão de dados, com o Protocolo de Internet (IP), que identificar os computadores e servidores.
+
 Pacotes Novell
-é um tipo de sistema operacional de rede. Ele fornece amplos serviços de rede, desde arquivos fáceis e simples até usuários de rede, dados, segurança e até gerenciamento de recursos. Geralmente é projetado para redes ou sistema operacional de
+é um tipo de sistema operacional de rede.
+Ele fornece amplos serviços de rede, desde arquivos fáceis e simples até usuários de rede, dados, segurança e até gerenciamento de recursos.
+Geralmente é projetado para redes ou sistema operacional de
 snmp
 Pacotes Apple
 
