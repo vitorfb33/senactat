@@ -71,15 +71,29 @@ TCP: O TCP (Transmission Control Protocol) é responsável pela divisão da mens
 UDP: pode-se enviar datagramas de uma máquina à outra, mas sem garantia de que os dados enviados chegarão intactos e na ordem correta.
 
 Proxy :
-Um servidor proxy é uma ponte entre você e o resto da internet. Normalmente, ao usar o navegador na internet, você será conectado diretamente ao site acessado.
-proxy encaminha apenas o tráfego ao seu destino, 
+Um proxy é um serviço que age como um intermediário entre o usuário e a internet, recebe e repassa todas as suas requisições ao site que você está acessando.
+Dessa forma, o IP registrado nessas páginas acessadas é o do proxy e não o seu. Assim, sua identidade não fica exposta na rede, dificultando que você seja rastreado.
+
+Além da proteção à identidade, um usuário pode adotar o proxy para. 
+
+Evitar restrições de navegação estatal ou institucional: governos, escolas e outras organizações podem usar firewalls para limitar o acesso dos usuários à internet.
+Nesse caso, o proxy ajudará a pessoa a contornar a restrição e acessar o que deseja
+
+Hospedar firewall: usado como um sistema de segurança, o firewall pode ser hospedado em proxy para aprovar ou bloquear o tráfego de entrada antes que ele chegue à rede.
+
 
 
 Quais as Funcões do PROXY: 
 Ele filtra informações, impedindo que malwares ou vírus infectem os dispositivos utilizados para navegação. 
+1
+Ao usar proxy com regras de filtragem de conteúdo, ela consegue bloquear o acesso dos alunos a sites como Facebook e Instagram, por exemplo.
 
 Firewall:
 
+Um firewall é um dispositivo de segurança da rede que monitora o tráfego de rede de entrada
+e saída e decide permitir ou bloquear tráfegos específicos de acordo com um conjunto definido de regras de segurança.
+
+Um firewall pode ser um hardware, software ou ambos.
 
 Portas 80, 110, 25, 21, 23
 DNS
