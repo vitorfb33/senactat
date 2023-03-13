@@ -27,19 +27,38 @@ Interface de Rede
 Cada interface de rede tem um endereço único chamado mac
 
 LAN: lan é uma rede local que interligam computadores dentro de um mesmo espaço físico 
+
 WAN: wan  são  de longas distancias , é um grande rede que pode englobar um pai ou continente 
+
 MAN: é uma rede de área metropolitana é similar a uma rede local (lan), mas abrange um cidade ou campus inteiro 
-Ela é formada a partir de da conexão de varias Lans  
- RAN: é uma rede de uma região geográfica especifica,  são menores que redes wan 
+Ela é formada a partir de da conexão de varias Lans
+
+ RAN: é uma rede de u ma região geográfica especifica,  são menores que redes wan
+ 
  CAN: rede que interliga computadores em diferentes edificações de um mesmo complexo institucional ex: universidade, condomínios 
+ 
  PAN: é uma rede onde é utilizado tecnologia de redes sem fio para interligar vários dispositivos variados 
 Tem uma área bem reduzida
+
  SAN:é uma rede que tem como objetivo a ligação entre vários computadores e dispositivos de armazenamento 
 Diferenças entre LAN e WAN em relação ao Hardware e Largura de Banda.
 Colisão (CSMA-CD)
-HUB
+é um protocolo de sistema de gerenciamento de tráfego que garante o funcionamento das redes Ethernet.
+Isso simplifica a transmissão de dados e barateia os equipamentos, mas em compensação traz um grave problema: as colisões de pacotes que ocorrem
+sempre que duas (ou mais) estações tentam transmitir dados ao mesmo tempo.
+
+HUB: Hub, também conhecido como concentrador, é um equipamento utilizado na área da
+informática para realizar a conexão de computadores de uma rede e possibilitar a transmissão de informações entre essas máquinas.
+hub manda a mensagem para todos da rede 
+
 Switch
-Router
+Switch é mais “inteligente”. O switch é uma central que distribui os dados somente aos destinatários ao invés de espelhar para toda a rede.
+
+Router:
+Um roteador é um dispositivo de hardware que serve como ponto de conexão entre uma rede local e a internet. Os roteadores gerenciam,
+ou “direcionam”, o tráfego e os dados da Web entre dispositivos em redes diferentes e permitem que vários dispositivos compartilhem
+a mesma conexão com a internet.
+
 O que acontece quando o Router não conhece e o caminho?
 O Que acontece quando um Pacote não chega até o destino?
 TCP: 
