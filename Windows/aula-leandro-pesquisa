@@ -66,11 +66,21 @@ O Que acontece quando um Pacote não chega até o destino?
 Perda de pacote é quando a informação é perdida no caminho entre sua fonte e seu destino. Às vezes, essa informação é reenviada após um tempo,
 mas também pode ser que seja descartada quando uma nova informação chega
 
-TCP: 
-UDP
-Proxy :  
-Quais as Funcões do PROXY:  
-Firewall: 
+TCP: O TCP (Transmission Control Protocol) é responsável pela divisão da mensagem em datagramas, pelo seu reagrupamento e retransmissão dos datagramas perdidos
+
+UDP: pode-se enviar datagramas de uma máquina à outra, mas sem garantia de que os dados enviados chegarão intactos e na ordem correta.
+
+Proxy :
+Um servidor proxy é uma ponte entre você e o resto da internet. Normalmente, ao usar o navegador na internet, você será conectado diretamente ao site acessado.
+proxy encaminha apenas o tráfego ao seu destino, 
+
+
+Quais as Funcões do PROXY: 
+Ele filtra informações, impedindo que malwares ou vírus infectem os dispositivos utilizados para navegação. 
+
+Firewall:
+
+
 Portas 80, 110, 25, 21, 23
 DNS
 DHCP
