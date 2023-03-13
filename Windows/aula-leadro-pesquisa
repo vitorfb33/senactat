@@ -58,9 +58,14 @@ Router:
 Um roteador é um dispositivo de hardware que serve como ponto de conexão entre uma rede local e a internet. Os roteadores gerenciam,
 ou “direcionam”, o tráfego e os dados da Web entre dispositivos em redes diferentes e permitem que vários dispositivos compartilhem
 a mesma conexão com a internet.
+ o roteador tem a função de criar o melhor caminho para ligar os aparelhos (computadores, notebooks, celulares, tablets, tvs) à rede de Internet.
 
 O que acontece quando o Router não conhece e o caminho?
+
 O Que acontece quando um Pacote não chega até o destino?
+Perda de pacote é quando a informação é perdida no caminho entre sua fonte e seu destino. Às vezes, essa informação é reenviada após um tempo,
+mas também pode ser que seja descartada quando uma nova informação chega
+
 TCP: 
 UDP
 Proxy :  
