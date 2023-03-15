@@ -1,0 +1,23 @@
+!comentarios no cisco IOS
+
+!configuração do switch cisco 
+enable 
+    clock set 20:45:00 14 march 2023
+    configure terminal 
+        hostname sw-l2-2960-1
+        service password-encryption
+        service timestamps log datetime msec
+        no ip domain-lookup
+        banner motd #AVISO: acesso autorizado somente para funcionarios#
+        enable secret 123@senac
+        username senac secret 123@senac
+        username tatuape password 123@senac
+        username admin  privilege 15  secret 123@senac
+        line console 0
+            login local 
+            password 123@senac
+            logging synchronous
+            exec-timeout 5 30
+            end
+copy running-config startup-config
+show running-config
