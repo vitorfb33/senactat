@@ -1,0 +1,108 @@
+!comentarios cisco IOS
+
+!pegar o cabo console 
+
+!configuração do switch cisco 
+enable 
+    clock set 20:45:00 14 march 2023
+    configure terminal 
+        hostname sw-l2-2960-1
+        service password-encryption
+        service timestamps log datetime msec
+        no ip domain-lookup
+        banner motd #AVISO: acesso autorizado somente para funcionarios#
+        enable secret 123@senac
+        username senac secret 123@senac
+        username tatuape password 123@senac
+        username admin  privilege 15  secret 123@senac
+        line console 0
+            login local 
+            password 123@senac
+            logging synchronous
+            exec-timeout 5 30
+            end
+copy running-config startup-config
+show running-config
+-------------------------------------------------------------------------------------------
+! = COMENTARIO
+! sem é comando 
+!COMANDO CISCO
+
+!se tornar Privilegiado (para fazer a configuração do aparelho) !(para sair do modo Privilegiado você pode digitar o comando: disable ou exit enable)
+ enable
+
+
+!Configuração de Data/Hora e dia e mês mas precisa escrever em ingles
+ clock set 20:45:00 14 march 2023
+
+!para acessar o modo de Configuração Global de comandos do Cisco IOS !(nesse modo que e feito a maioria das configurações do Cisco)
+ configure terminal
+
+(!OBSERVAÇÃO: essa configuração é obrigatória para o serviço de acesso remoto SSH e demais serviços de rede)
+
+!serve para dar nome ao equipamento 
+ hostname sw-l2-2960-1
+
+!comando que oculta senhas em texto simples. (senhas do Tipo-7 por padrão não são criptografadas no Cisco IOS/ vem desabilitado, e precisa habilitar) 
+ service password-encryption
+
+!esse recurso é utilizado nos sistemas de monitoramento, desempenho e consumo de rede, 
+!principalmente no sistemas de auditoria de acesso ou recursos/serviços de rede e protocolos
+ service timestamps log datetime msec
+
+
+!Desativando o serviço de resolução de nomes de domínio (serviço habilitado por padrão) no Cisco IOS
+!Quando o ip domain-lookup está habilitado o switch ou router tenta resolver qualquer coisa que seja digitado para um IP, e isto bloqueia o acesso por alguns segundos.
+!DICA: se você desabilitar esse recurso, ele resolve o problema de travamento de comandos no Cisco IOS
+!DICA: para desbloquear o terminal, você pressiona: Ctrl+Shift+6 ou espera a liberação do terminal
+!DICA: o comando (no) é usado para desabilitar ou remover configurações feitas no switch ou router da Cisco
+ no ip domain-lookup
+ 
+!DICA: existe vários tipos de Banner no Cisco IOS, o MOTD (Mensagem do Dia) é o mais utilizado	
+!EXEMPLO: banner motd (Mensagem do Dia), banner login (Mensagem de Login), banner exec (Mensagem de Modo EXEC), banner incoming (Mensagem de Entrada)
+!DICA: é recomendado não utilizar acentuação, textos longos ou complexos no Banner MOTD
+!sustenido = #:  #é onde o vc vai colocar a mensagem. E depois fechar com o sustenido#
+ banner motd #AVISO: acesso autorizado somente para funcionarios#
+ 
+!Habilitando o uso senha do Tipo-5 Secret para acessar o modo EXEC Privilegiado do Cisco IOS
+!secret serve para criar uma senha do tipo 5
+!OBSERVAÇÃO: por padrão o acesso ao modo EXEC Privilegiado é liberado sem segurança
+ enable secret 123@senac
+ 
+ !username serve para se autenticar no swicth da  cisco e não pode ficar sem um senha 
+ !DICA: existe 16 níveis de privilégios no Cisco IOS (0 mais baixo até 15 mais alto)
+ !DICA: não é recomendado criar usuários utilizando senhas do Tipo-7 (senhas fracas, fácil de quebrar)
+ !DICA: existe a possibilidade de se autenticar no Switch utilizando os protocolos RADIUS ou TACACS
+ !DICA: usuários com Privilégio 15 não precisa digitar o comando enable após se logar no Switch ou Router
+ !OBSERVAÇÃO: criação de usuários comuns para administrar o Switch, privilégio padrão recomendado: 1
+ !secret serve para criar uma senha do tipo 5
+ !password serve para criar uma senha do tipo 7
+   username senac secret 123@senac
+   username tatuape password 123@senac
+   username admin  privilege 15  secret 123@senac
+   
+  !é usado para inserir o modo de configuração na linha do console. O zero é usado para representar a porta de configuração do swicth
+   line console 0
+   
+  !Forçando fazer login local utilizando usuário e senha locais do switch
+   login local
+  
+  !Habilitando senha de acesso do Tipo-7 Password
+  !Password serve para ativar a senha de acesso do Tipo-7 Password
+   password 123@senac
+  
+  !oque é log é uma expressão utilizada para descrever o processo de registro de eventos relevantes num sistema computacional
+  !serve para sincronizando as mensagens de logs na tela (oque é log)
+   logging synchronous
+  
+  !comando exec-timeout é usado para configurar o número de minutos sem atividade do terminal antes da sessão ser automaticamente encerrada.
+   exec-timeout 5 30 
+  
+  !Saindo de todos os níveis e voltando para o modo EXEC Privilegiado
+   end
+  
+  !comando importante para gravar as informações de configuração no caso do equipamento reiniciar repentinamente.
+   copy running-config startup-config
+  
+  ! comando utilizado para ver as configurações feitas no swicth da cisco 
+   show running-config
