@@ -1,0 +1,125 @@
+!comandos ciscos-aula-3-leandro  aula 15/03/2023 (aula de hoje fazer a configuração das Vlan e interface e trunk)
+
+
+
+!4 computadores (colocar IPV4)
+!pegar 1 Switch 2690
+!nomear o equipamento 
+!criar duas Vlans uma vai EDU e outra ADM
+!nomear as Vlans 
+!configurar as interface 1-12 para o EDU e 13-24 para ADM
+!configurar o trunk entre os dois Switch
+
+ 
+Switch> enable
+	Switch#
+	Switch# configure terminal
+		Switch(config)# hostname SW01
+		SW01(config)#
+		SW01(config)# vlan 10 	(aqui criaremos duas Vlans, a Vlan 10 e Vlan 20  )
+ 			SW01(config-vlan)#name EDU     ( a outra VLAN vai se chamar ADM)
+			SW01(config-vlan)#end
+	SW01# Show Vlan Brief
+	SW01# configure terminal
+		SW01(config)# interface f0/1  (aqui é o momento de configurar a interface) (fazer isso até aporta 12)
+			SW01(config-if)#switchport access vlan 10
+			SW01(config-if)#end
+	SW01# show running-config
+	SW01# copy running-config startup-config
+
+
+--------------------------------------------------------------------------------------------------------------
+!aqui vai ser um modo mais rapido para juntar as interface em uma VLAN de uma vez só 
+!aqui faremos com o 2 Switch da cisco
+ 
+!4 computadores (colocar IPV4)
+!nomear o equipamento cisco
+!criar duas Vlans uma vai EDU e outra ADM
+!nomear as Vlans 
+!configurar as interface 1-12 para o EDU e 13-24 para ADM
+!configurar para modo trunk o switch
+
+
+
+
+Switch>enable
+	Switch# configure terminal
+		Switch(config)# hostname SW02 
+		SW02(config)#
+		SW02(config)# vlan 10
+			SW02(config-vlan)# name EDU 
+			SW02(config-vlan)# end
+	SW02# Show Vlan Brief
+	SW02# configure terminal 
+		SW02(config)# interface rage fast 0/1-12
+			SW02(config-if)# switchport access vlan 10
+			SW02(config-if)# end
+	SW02#configure terminal
+		SW(config)#interface gigabitethernet0/1
+			SW02(config-if)#switchport mode trunk (OBSERVAÇÂO: só precisa fazer essa configuração em um switch)
+			SW02(config-if)#end
+	SW02#show running-config
+	SW02# copy running-config startup-config
+
+
+
+!se tornar Privilegiado (para fazer a configuração do aparelho) !(para sair do modo Privilegiado você pode digitar o comando: disable ou exit
+enable
+
+!para acessar o modo de Configuração Global de comandos do Cisco IOS !(nesse modo que e feito a maioria das configurações do Cisco)
+Switch# configure terminal
+
+!serve para dar nome ao equipamento 
+Switch(config)# hostname SW01
+
+
+
+!esse comando server para você criar uma VLAN (EX: VLAN 8, vlan 10, VLAN 20, VLAN 30, etc
+Switch(config)# vlan 10
+
+!esse comando serve para nomear uma VLAN
+Switch(config-vlan)#name EDU
+
+
+!esse comando serve para visualizar a tabela vlan e as portas do switch
+Switch# Show Vlan Brief
+
+!Especifica uma ID de interface a ser configurada 
+Switch(config)#interface f0/1
+
+!switchport access vlan é um comando usado para atribuir a porta de um swicht pra uma vlan criada, e fazer parte da vlan 
+!criada
+Switch(config-if)#switchport access vlan 10
+
+
+!comando utilizado para ver as configurações feitas no swicth da cisco
+Switch# show running-config
+
+!uma outra forma de salvar( o mais indicado é usar o, copy running-config startup-config)
+Switch#WR
+
+
+! Especifica uma lista de VLANs que podem ser configuradas sem uma necessidade de ir porta por porta.
+SW(config)#interface range fast 0/1-10
+
+!switchport access vlan é um comando usado para atribuir a porta de um swicht pra uma vlan criada, e fazer parte da vlan 
+!criada
+SW(config-if)#switchport access vlan 10
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+!nesse momento e onde nos vamos conectar um cabo em dois switch na porta gigabitethernet0/1 e usar o comando trunk
+!OBSERVAÇÃO: dois Switch não consegue se comunicar com dois cabos interligados neles, eles entram em loop
+!Quando uma porta de um switch é configurada em modo TRUNK, ela se torna capaz de enviar e receber quadros de múltiplas VLANs.
+!pegar uma cabo gigabitethernet plugar nos dois SWITCH
+
+
+!Especifica uma ID de interface a ser configurada
+SW(config)#interface gigabitethernet0/1
+
+
+!esse comando especificar a quais VLANs se torna capaz de enviar e receber quadros de múltiplas VLANs.
+SW(config-if)#switchport mode trunk
+----
