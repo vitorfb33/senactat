@@ -21,8 +21,24 @@ enable
             logging synchronous
             exec-timeout 5 30
             end
+        line vty 0 4
+            login local 
+            password 123@senac
+            logging synchronous
+            exec-timeout 5 30
+            transpot input all
+            exit
+        ip default-gatway 192.168.1.254
+        interface vlan 1 
+            description interface de SVI
+            ip address 192.168.1.250 255.255.255.0
+            no shutdown 
+            end        
 copy running-config startup-config
 show running-config
+show ip interface brief
+show vlan brief 
+
 -------------------------------------------------------------------------------------------
 ! = COMENTARIO
 ! sem é comando 
@@ -101,8 +117,50 @@ show running-config
   !Saindo de todos os níveis e voltando para o modo EXEC Privilegiado
    end
   
+  !Acessando as linhas virtuais de acesso remoto do Switch
+   line vty 0 4
+   
+   
+   
+  !Configuração do tipo de protocolo de transporte de entrada ou saída da linha virtual
+			
+  !DICA: na linha virtual você pode controlar o tipo de acesso remoto de entrada ou saída
+			
+  !OBSERVAÇÃO: existe vários protocolos de acesso remoto, os mais utilizados são: Telnet !(não seguro) ou SSH (seguro)
+  !OBSERVAÇÃO: por motivo de segurança, acesso remoto utilizando o protocolo Telnet não é mais recomendado
+  
+  !DICA: existe várias opções de configuração do protocolo de transporte, a opção: all !permite todos os protocolos
+			!permite todos os protocolos
+			
+  !EXEMPLO DE ENTRADA: transport input {lat | mop | nasi | none | pad | rlogin | ssh | telnet | v120} 
+  !EXEMPLO DE SAÍDA: transport output {lat | mop | nasi | none | pad | rlogin | ssh | telnet | v120}
+  !EXEMPLO DE PREFERÊNCIA: transport preferred {lat | mop | nasi | none | pad | rlogin | ssh | telnet | v120}
+  
+  !Configuração do tipo de protocolo de transporte de entrada
+   transport input all
+   
+   
+  !Configuração do Gateway padrão IPv4 no Switch
+   ip default-gateway 192.168.1.254
+   
+   
+  !Configuração da Descrição da Interface Virtual
+   description Interface de Gerenciamento do Switch SW-L2-2960-2
+   
+  !Configuração do Endereçamento IPv4 da Interface Virtual
+   ip address 192.168.1.251 255.255.255.0
+   
+  
+  !Inicializando a Interface Virtual do Switch
+   no shutdown
+  
+  
+  
   !comando importante para gravar as informações de configuração no caso do equipamento reiniciar repentinamente.
    copy running-config startup-config
   
   ! comando utilizado para ver as configurações feitas no swicth da cisco 
    show running-config
+
+  !Visualizando as configurações das interfaces e portas de rede do Switch
+   show ip interface brief
