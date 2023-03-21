@@ -58,11 +58,6 @@ SW(config)#interface range fast 0/1-10
 SW(config-if)#switchport access vlan 35
 
 
-.....
-
-
-SW(config)#interface f0/20
-SW(config-if)#switchport mode trunk
 ----
 .....
 
@@ -74,6 +69,16 @@ SW-A(config-if-range)#channel-group 1 mode active
 SW-B(config)#int range gigabitEthernet 0/1-2
 SW-B(config-if-range)#channel-group 1 mode passive
 ....
+SW(config)#interface f0/20
+SW(config-if)#switchport mode trunk
+
+
+
+
+
+
+
+
 show etherchannel
 show interfaces etherchannel
 
