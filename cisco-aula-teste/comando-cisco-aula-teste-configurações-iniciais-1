@@ -165,7 +165,7 @@ show vlan brief
   !EXEMPLO DE PREFERÊNCIA: transport preferred {lat | mop | nasi | none | pad | rlogin | ssh | telnet | v120}
   
   !Configuração do tipo de protocolo de transporte de entrada
-   transport input all
+   transport input ssh
    
    
   !Configuração do Gateway padrão IPv4 no Switch
