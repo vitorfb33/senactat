@@ -16,6 +16,10 @@ enable
         username tatuape password 123@senac
         username admin  privilege 15  secret 123@senac
 	ip domain-name senac.intra
+	crypto key generate rsa general-keys modulus 1024
+        ip ssh version 2
+	ip ssh time-out 60
+	ip ssh authentication-retries 2
         line console 0
             login local 
             password 123@senac
@@ -27,7 +31,7 @@ enable
             password 123@senac
             logging synchronous
             exec-timeout 5 30
-            transpot input all
+            transpot input ssh
             exit
         ip default-gatway 192.168.1.254
         interface vlan 1 
@@ -38,7 +42,11 @@ enable
 copy running-config startup-config
 show running-config
 show ip interface brief
-show vlan brief 
+show vlan brief
+show users
+show ip ssh
+show crypto key mypubkey rsa
+show ssh
 
 -------------------------------------------------------------------------------------------
 ! = COMENTARIO
@@ -199,3 +207,15 @@ show vlan brief
 
   !Visualizando as configurações das interfaces e portas de rede do Switch
    show ip interface brief
+   
+  !Visualizando as configurações do SSH Server
+   show ip ssh
+
+  !Visualizando das chaves públicas RSA
+   show crypto key mypubkey rsa
+
+  !Visualizando as conexões ativas do SSH Server
+   show ssh
+
+  !Visualizando as conexões remotas estabelecidas no Switch
+   show users 
