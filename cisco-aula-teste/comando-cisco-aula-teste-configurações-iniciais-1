@@ -15,6 +15,7 @@ enable
         username senac secret 123@senac
         username tatuape password 123@senac
         username admin  privilege 15  secret 123@senac
+	ip domain-name senac.intra
         line console 0
             login local 
             password 123@senac
@@ -97,6 +98,33 @@ show vlan brief
    username tatuape password 123@senac
    username admin  privilege 15  secret 123@senac
    
+ !!Configuração do nome de Domínio FQDN (Nome de Domínio Totalmente Qualificado)  
+   ip domain-name senac.intra
+   
+   
+ !Criação/Geração da chave de criptografia do serviço do SSH Server local
+ !DICA: por padrão o serviço do SSH Server está desabilitado no Switch ou Router
+ !DICA: por padrão todas as conexões remotas utilizando o protocolo SSH são criptografadas
+   crypto key generate rsa general-keys modulus 1024
+   
+ !Habilitando a versão 2 do serviço de SSH Server
+ !DICA: a versão 2 do serviço do SSH Server corrigi várias falhas de segurança existe na versão 1.99 
+   ip ssh version 2
+   
+  !Habilitando o tempo de inatividade para novas conexões do SSH Server
+  !DICA: configuração de inatividade é feita somente em segundos (1 até 120 - 2 minutos)
+  !OBSERVAÇÃO: essa configuração está relacionada ao tempo para se autenticar no serviço do SSH no Switch ou Router 
+   ip ssh time-out 60
+   
+  !Habilitando o número máximo de tentativas de conexões simultâneas no SSH Server
+  !DICA: essa opção aumenta o nível de segurança contra ataques de Força Bruta (Brute-Force)
+  !OBSERVAÇÃO: limites de conexões simultâneas vai de: 0 até 5  
+   ip ssh authentication-retries 2
+   
+   
+  !Configuração do protocolo de transporte de entrada para aceitar somente o SSH
+   transport input ssh
+  
   !é usado para inserir o modo de configuração na linha do console. O zero é usado para representar a porta de configuração do swicth
    line console 0
    
@@ -154,7 +182,14 @@ show vlan brief
   !Inicializando a Interface Virtual do Switch
    no shutdown
   
+  !sair 
+  end
+ 
   
+  !Acessando remotamente o Switch utilizando o protocolo SSH
+  !OBSERVAÇÃO: -l (não é o número "1" e sim "l" minúsculo)
+   ssh -l admin 192.168.1.250
+   ssh -l admin 192.168.1.251
   
   !comando importante para gravar as informações de configuração no caso do equipamento reiniciar repentinamente.
    copy running-config startup-config
