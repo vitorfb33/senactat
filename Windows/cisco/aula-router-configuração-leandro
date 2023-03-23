@@ -1,0 +1,40 @@
+aula 22/03/2023
+
+Router>enable
+
+Router#conf t
+Router(config)#hostname SP
+SP(config)#interface f0/0
+SP(config-if)#desc Porta LAn de SP
+SP(config-if)#ip add 192.168.10.1 255.255.255.0
+SP(config-if)#no shutdow
+SP(config-if)#exit
+SP(config)#interface s0/0
+SP(config-if)#desc PORTA WAN que LIGA SP ao RJnet
+SP(config-if)#ip add 10.0.0.1 255.0.0.0
+SP(config-if)#no shutdow
+SP(config-if)#clock rate 128000
+SP(config-if)#band 128
+SP(config-if)#exit
+SP(config-router)#net 192.168.10.0
+SP(config-router)#net 10.0.0.0
+SP(config-router)# "Ctrl+Z"
+SP#show running-config
+SP#copy run star
+
+
+.....
+
+
+SP#reload
+
+.....
+
+
+SP(config)# line con 0
+SP(config-line)#password SENHA
+SP(config-line)#login
+.....
+SP(config)# enable secret SENHA
+SP(config)# enable password SENHA
+....
