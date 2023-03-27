@@ -25,15 +25,15 @@ enable
             password 123@senac
             logging synchronous
             exec-timeout 5 30
-            end
+            exit
         line vty 0 4
             login local 
             password 123@senac
             logging synchronous
             exec-timeout 5 30
-            transpot input ssh
+            transport input ssh
             exit
-        ip default-gatway 192.168.1.254
+        ip default-gateway 192.168.1.254
         interface vlan 1 
             description interface de SVI
             ip address 192.168.1.250 255.255.255.0
