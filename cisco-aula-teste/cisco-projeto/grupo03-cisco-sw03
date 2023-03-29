@@ -2,7 +2,7 @@
 
 enable
  configure terminal 
-  hostname sw-g01
+  hostname sw-g03
   service password-encryption
   service timestamps log datetime msec
   login block-for 120 attempts 4 within 60
