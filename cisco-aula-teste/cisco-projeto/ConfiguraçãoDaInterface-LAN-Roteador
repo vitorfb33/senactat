@@ -1,0 +1,47 @@
+!ConfiguraçãoDaInterface-LAN-Roteador
+enable
+	configure terminal
+		interface gigabitEthernet 0/0
+			no shutdown
+			exit
+		interface gigabitEthernet 0/0.30
+			description Subinterface da VLAN de SVI do Switch Layer 3 3560
+			encapsulation dot1Q 30
+			ip address 172.16.30.254 255.255.255.0
+			exit
+
+		interface gigabitEthernet 0/0.31
+			description Subinterface da VLAN do Primeiro Usuário
+			encapsulation dot1Q 31
+			ip address 172.16.31.254 255.255.255.0
+			exit
+
+		interface gigabitEthernet 0/0.32
+			description Subinterface da VLAN do Segundo Usuário
+			encapsulation dot1Q 32
+			ip address 172.16.32.254 255.255.255.0
+			exit
+
+		interface gigabitEthernet 0/0.33
+			description Subinterface da VLAN do Terceiro Usuário
+			encapsulation dot1Q 33
+			ip address 172.16.33.254 255.255.255.0
+			exit
+
+		interface gigabitEthernet 0/0.34
+			description Subinterface da VLAN do Quarto Usuário
+			encapsulation dot1Q 34
+			ip address 172.16.34.254 255.255.255.0
+			exit
+
+		interface gigabitEthernet 0/0.35
+			description Subinterface da VLAN Wireless
+			encapsulation dot1Q 35
+			ip address 172.16.35.254 255.255.255.0
+			end
+write
+copy running-config startup-config
+show running-config
+show ip interface brief
+show ip route
+show ip route connected	
