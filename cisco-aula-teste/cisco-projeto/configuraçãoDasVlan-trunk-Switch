@@ -1,0 +1,69 @@
+enable
+	configure terminal
+
+		!Criação da VLAN padrão
+		vlan 30
+			name svig03
+		vlan 31
+			name ??vitor?? 
+		vlan 32
+			name ??vincius?? 
+		vlan 33
+			name gustavo
+		vlan 34
+			name wesley
+		vlan 35
+			name wifi
+			exit
+
+		!OBSERVAÇÃO IMPORTANTE: a Interface fastEthernet 0/1 não será usada.
+		!Configurando a Interface de Acesso a VLAN do Primeiro Usuário
+		interface fastEthernet 0/2
+			
+			description Interface de Acesso da VLAN 31 do primeiro Usuario gustavo 
+			
+			switchport mode access
+			
+			switchport access vlan 31
+		
+			exit
+		
+		!Configurando a Interface de Acesso a VLAN do Segundo Usuário
+		interface fastEthernet 0/3
+			description Interface de Acesso da VLAN 32 do Segundo Usuário vinicius
+			switchport mode access
+			switchport access vlan 32
+			exit
+
+		!Configurando a Interface de Acesso a VLAN do Terceiro Usuário
+		interface fastEthernet 0/4
+			description Interface de Acesso da VLAN 33 do Terceiro Usuário weslley
+			switchport mode access
+			switchport access vlan 33
+			exit
+
+		!Configurando a Interface de Acesso a VLAN do Quarto Usuário
+		interface fastEthernet 0/5
+			description Interface de Acesso da VLAN 34 do Quarto Usuário vitor
+			switchport mode access
+			switchport access vlan 34
+			exit
+
+		!Configurando a Interface de Acesso a VLAN da Rede Sem-Fio (Wi-Fi/Wireless)
+		interface fastEthernet 0/6
+			description Interface de Acesso da VLAN 35 Wireless
+			switchport mode access
+			switchport access vlan 35
+			exit
+		
+		!Desativando as Interfaces que não serão utilizadas no Switch Layer 3 3560
+		interface range fastEthernet 0/7 - 23
+			shutdown
+			exit
+
+		!Configurando a Interface de Trunk com o Router 2911
+		interface fastEthernet 0/24
+			description Interface de Trunk com o Router 2911 do Grupo-03
+			switchport trunk encapsulation dot1q
+			switchport mode trunk
+		end
