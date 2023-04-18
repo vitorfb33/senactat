@@ -2,16 +2,16 @@
 
 enable
  configure terminal 
-  hostname sw-g03
-  service password-encryption
-  service timestamps log datetime msec
-  login block-for 120 attempts 4 within 60
+        hostname sw-g03
+        service password-encryption
+        service timestamps log datetime msec
+        login block-for 120 attempts 4 within 60
 	no ip domain-lookup
 	banner motd #AVISO: acesso autorizado somente a funcionarios#
 	enable secret 123@senac
 	username senac secret 123@senac
-  username tatuape password 123@senac
-  username vitor  privilege 15  secret 123@senac
+        username tatuape password 123@senac
+        username vitor  privilege 15  secret 123@senac
 	line console 0
             login local 
             password 123@senac
@@ -27,14 +27,63 @@ enable
             exit
 	ip domain-name senac.br
 	crypto key generate rsa general-keys modulus 1024
-  ip ssh version 2
+        ip ssh version 2
 	ip ssh time-out 60
 	ip ssh authentication-retries 2
-
 	ip default-gateway 172.16.30.254
-      interface vlan 30 
+        interface vlan 30 
             description Interface SVI de Gerenciamento do Grupo-01
             ip address 172.16.30.253 255.255.255.0
             no shutdown
-	          exit
-	
+	    exit
+	vlan 30
+	    name svig03
+	    exit
+	vlan 31
+	    name vitor
+	    exit
+	vlan 32
+	    name wesley
+	    exit
+	vlan 33
+	    name vinicius
+	    exit
+	vlan 34
+	    name gustavo
+	    exit
+	vlan 35
+	    name wifi 
+	    exit
+	interface fastEthernet 0/2             
+	    description Interface de Acesso da VLAN 31 do Primeiro Usuário
+	    switchport mode access
+	    switchport access vlan 31			
+	    exit
+	interface fastEthernet 0/3
+	    description Interface de Acesso da VLAN 32 do Segundo Usuário
+	    switchport mode access
+	    switchport access vlan 32
+	    exit
+	interface fastEthernet 0/4
+	    description Interface de Acesso da VLAN 33 do Terceiro Usuário
+	    switchport mode access
+	    switchport access vlan 33
+	    exit
+	interface fastEthernet 0/5
+	    description Interface de Acesso da VLAN 34 do Quarto Usuário
+	    switchport mode access
+	    switchport access vlan 34
+	    exit
+	interface fastEthernet 0/6
+	    description Interface de Acesso da VLAN 35 Wireless
+	    switchport mode access
+	    switchport access vlan 35
+	    exit		
+	interface range fastEthernet 0/7 - 23
+	    shutdown
+	    exit
+	interface fastEthernet 0/24
+	    description Interface de Trunk com o Router 2911 do Grupo-03
+	    switchport trunk encapsulation dot1q
+	    switchport mode trunk
+	    exit
