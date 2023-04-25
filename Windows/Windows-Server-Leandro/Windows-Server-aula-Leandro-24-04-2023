@@ -1,0 +1,15 @@
+AULA de Server 2012 – Parte 1
+Implantação
+1-	Instalar um Windows 2012 Server Data Center (WMNK4-TBQF7-RXDY7-7RB89-M97JY) em uma VM com as Seguintes configurações: HD de 25 GB FIXO, 4 GB de RAM, 2 Núcleos de Processador, 3 Placas de REDE Interna e + 8 SSDs de 5 GB cada dinamicamente expansível.
+2-	Instalar uma estação de Trabalho Windows 10 PCNº+100
+3-	Instalar uma estação de Trabalho Windows 10 PCNº+150
+4-	Montar um Nic Team com as 3 Placas de Rede
+5-	Ip do Windows Server = 172.16.X.10 255.255.255.0 Hostname = SRVNomeNº
+6-	Instalar o AD = sobrenomeNº.local com o DNS integrado.
+7-	Instalar o DHCP para distribuir endereçamento para as estações. 172.16.X.100 até 172.16.X.200
+8-	Criar uma Reserva no Servidor DHCP para a sua PCNº+150.
+9-	Ingressar as 2 Estações de Trabalho no Domínio (PCNº+100 e PCNº+150).
+10-	Montar um Raid 5 (Paridade) de 15 GB com os Hds 1,2 e 3
+11-	Montar um Raid 1 (Espelho) de 5 GB com os Hds 1 e 2
+12-	Criar um volume simples no HD 3 de 5GB e formatar com o nome de BKDADOS
+Administração
