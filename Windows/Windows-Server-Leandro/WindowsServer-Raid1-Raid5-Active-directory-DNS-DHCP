@@ -188,3 +188,51 @@ clicar na bandeira
 
 depois ira aparecer 
 promover este servidor a um controlador de dominio (clicar nele)
+
+(x) adicionar uma nova floresta
+
+(não pode ser o mesmo nome que voce colocou na maquina)
+o nome do dominio exemplo:vitor.intra
+
+
+proximo 
+
+
+(opcões do controlador de dominio)
+nivel funcional da floresta
+nivel funcional do dominio 
+manter o padrão  
+
+caso as caixinhas não estiverem marcada, marcar os dois primeiros
+
+colocar uma senha:???
+confimar senha:?????
+ 
+proximo 
+
+proximo 
+
+o nome NetBios exemplo :vitor
+
+proximo
+
+
+(caminhos)
+
+usar o padrão 
+
+proximo 
+
+(verificação de pré-requisitos)
+(não se preucupe com as esclamaçoes se estiver verde na parte de baixo pode instalar)
+
+instalar
+reiniciar a maquina virtual 
+
+----------------------------------------------------------------------------------------------
+(vamos instalar o DHCP e depois fazer a configuração)
+
+
+
+
+
