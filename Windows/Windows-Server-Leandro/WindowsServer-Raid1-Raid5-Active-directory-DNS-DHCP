@@ -1,0 +1,190 @@
+instalar o Windows Server 2012 R (com 50GB) e (4096 de ram: 4GB)
+----------------------------------------
+atualizar os drivers
+
+clicar em dispositivos( se encontra na parte de cima da maquina virtual)
+
+clicar em inserir imagem de CD dos adicionais para convidados
+
+clicar em explorador de arquivo 
+
+ir até meu computador e 
+clicar em unidade de CD(D:) VirtualBox Guest additions
+e instalar 
+-----------------------------------------
+depois de instalar os drivers 
+
+mudar o nome do computador 
+
+ir até servidor local 
+
+clicar nome do computador (onde está azul para alterar o nome)
+
+clicar em alterar
+
+e dar um nome pro pc EX: SRVvitor
+-------------------------------------------
+(oque é nicteam:permite múltiplas interfaces de rede separada para ser combinada uma única conexão lógica, que oferece maior confiabilidade e desempenho, combinando a largura de banda de cada NIC. Se eu tenho três adaptadores de rede de 1GB em conjunto, eu vou pegar um link teamed de 3GB.)
+
+vamos fazer um nicteam (precisaremos de 3 placas de rede (placada de rede tem de ser internar não NAT)
+
+clicar em agrupamento nic(onde está azul)
+(temos 3 campos vamos usar EQUIPES)
+
+equipes 
+
+clicar em tarefas
+ 
+clicar em nova equipe
+ 
+nome da equipe teamvitor
+
+escolher as 3 placas de rede e fazer como uma só (#caso de algum problema em algum cabo os outros continuam)
+
+esperar as 3 placas de rede ficar ativa 
+---------------------------------------------
+agora vamos inserir um numero ipv4 para o teamvitor 
+
+teamvitor(clicar onde está azul)
+
+
+clicar com o botão direto do mause no teamvitor
+
+propriedades 
+
+clicar no  protocolo TCP/IP Versão 4 (TCP/IPv4)  
+
+colocar um  indereço iPv4 ex: 172.16.20.10 (usaremos IP classe B)
+					255.255.255.0 (com mascara de classe C)
+
+clicar ok 
+---------------------------------------------------
+agora vamos fazer raid 1 e raid 5
+(raid 1 é espelhamento precisa de dois harddisk(HD) para fazer)
+(raid 5  dados são gravados em três ou mais discos usando paridade)
+
+ir até maquina virtual com o pc desligado clicar em configuração
+clicar em armazenamento (controladora:IDE  do lado vai estar um disco rigido com um simbolo de + clicar em adicionar um disco rigido
+
+e depois criar com o nome SSD1 até 8 
+
+vamos colocar 8 disco rigido( o nome vai ser SSD1 o segundo vai ser SSD2 até o SSD8
+
+depois de ter feito isso e ligar a maquina virtual 
+clicar no simbolo do windows com o botão direito do mause
+
+clicar em gerenciamento de disco (vai abrir o gerenciamento de disco)
+
+aqui faremos o raid 1 
+
+clicar com o botão direito do mause em um disco que não esta alocado
+
+clicar em novo Volume Espelhado
+
+avançar
+
+disco 1 (HD ou SSD) que você selecionou já vai estar selecionado 
+
+teremos os outros discos disponiveis
+
+escolher um disco disponivel (clicar nele)
+
+clicar em adicionar 
+
+avançar 
+
+precisamos atribuir uma letra para o disco (sempre pegue as letras do começo exemplo: E,F,G etc
+avançar 
+
+
+avançar 
+
+concluir
+
+sim 
+-------------------------------------------------------------
+raid 5 
+
+clicar com o botão direito do mause em um disco que não esta alocado
+
+clicar novo volume raid 5
+
+avançar
+
+disco 3 (HD ou SSD) que você selecionou já vai estar selecionado 
+
+teremos os outros discos disponiveis
+
+escolher dois discos disponiveis 
+
+clicar nos disco que vocês escolheu e adicionar 
+
+avançar 
+
+avançar 
+
+o rótulo do volume (serve para nomear o disco) exemplo: dadosRaid5 
+(se não quiser colocar um nome é so avançar) 
+
+concluir
+
+sim 
+
+assim concluimos o raid 1 e raid 5
+---------------------------------------------------------------  
+(caso o gerenciador do servidor não estja aberto no windows 2012 r2
+clicar no simbolo do  windows e clicar no gerenciador de servidores
+isso tambem server pro windows 2016 e outros)
+
+agora iremos instalar o active directory
+
+abrir o gerenciador de servidores 
+
+adicionar funções e recursos( voce tambem pode abrir pelo gerenciar que esta do lado da bandeira ou flag se prefirir, vamos pelo gerenciar)
+
+clicar em gerenciar 
+
+adicionar funçoes e recursos 
+
+proximo 
+
+(x)instalação baseada em função ou recurso (clicar em proximo)
+
+proximo 
+
+escolha o servidor que vc quer usar para instalar o AD 
+(como só temos um servidor vamos usar esse mesmo que criamos)
+
+proximo 
+
+(funçoes do servidor)
+(escolher um serviço que voce deseja instalar no servidor)(escolher serviço de dominio active directory, eles instalaram alguns outros recursos aceitar junto com AD)
+
+(x) serviço de dominio active directory
+
+proximo 
+
+
+(nesse momento não iremos colocar nem um recursos ainda então) 
+
+proximo
+
+(O AD DS requer um servidor DNS instalado na rede. Se não houver um servidor DNS, o servidor ira instalar o DNS junto com Active Directory e mais alguns recursos)
+
+proximo 
+
+install
+
+depois de instalar 
+
+reiniciar a maquina virtual ou o computador
+---------------------------------------------------------------
+agora iremos fazer a configurção do AD- Active Directory 
+
+abrir o gerenciador de servidor 
+
+na bandeira vai estar com uma esclamção em amarelo
+clicar na bandeira 
+
+depois ira aparecer 
+promover este servidor a um controlador de dominio (clicar nele)
