@@ -1,0 +1,91 @@
+(crianção de ususarios e grupos no Active Directory)
+
+
+ferramentas
+
+Usuarios e computadores do active Directory (clicar)
+
+
+clicar no seu servidor 
+
+
+                
+(Depois clicar na pasta que se encontra ao lado de duas pessoas(boneco) a acima) 
+criar uma nova unidade  organizacional no contêiner atual
+
+
+(escolher um nome para pasta)
+ex: grupo de gerentes
+ok
+-----------------------------------------------------------------------
+
+clicar no grupo de gerentes
+
+(criando o usuario )
+(clicar no boneco que esta sozinho) 
+
+criar um novo usuario no contêiner atual
+
+Nome:marcos
+ 
+Nome de longon de usuario:marcos
+
+
+avançar
+
+
+escolher uma senha ?
+confirmar senha ?
+
+avançar
+
+concluido
+
+(criar mais 3 pessoas)
+
+----------------------------------------------------------------------------
+
+(crianção de grupos)
+
+clicar no grupo de gerentes
+
+
+(clicar no boneco que está com duas pessoas)
+
+ 
+criar um novo grupo no contêiner atual
+
+
+Nome do grupo:gerentes
+
+escopo do grupo: manter global 
+tipo de grupo: manter Segurança
+
+ok
+
+-----------------------------------------------------------------------------
+
+( Adicionando usuarios no grupo )
+
+clicar no grupo gerentes  que vc criou
+
+
+(estara na abas de cima )
+membros
+
+
+clicar em adicionar 
+
+
+digite os nomes de objeto a serem selecionados
+
+marcos;andress;joao
+
+clicar em verificar nomes 
+
+
+ok
+
+(pronto estão no grupo)(fazer o teste em uma maquina virtual)
+
+--------------------------------------------------------------------------------
