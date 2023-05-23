@@ -43,7 +43,7 @@ escolher as 3 placas de rede e fazer como uma só (#caso de algum problema em al
 
 esperar as 3 placas de rede ficar ativa 
 ---------------------------------------------
-agora vamos inserir um numero ipv4 para o teamvitor 
+agora vamos inserir um numero ipv4 para o teamvitor (nicteam)
 
 teamvitor(clicar onde está azul)
 
@@ -191,9 +191,8 @@ promover este servidor a um controlador de dominio (clicar nele)
 
 (x) adicionar uma nova floresta
 
-(não pode ser o mesmo nome que voce colocou na maquina)
 o nome do dominio exemplo:vitor.intra
-
+(não pode ser o mesmo nome que voce colocou na maquina)
 
 proximo 
 
@@ -232,7 +231,113 @@ reiniciar a maquina virtual
 ----------------------------------------------------------------------------------------------
 (vamos instalar o DHCP e depois fazer a configuração)
 
+instalação do DHCP
 
 
+
+abrir o gerenciador de servidores 
+
+clicar em gerenciar 
+
+adicionar funçoes e recursos 
+
+proximo 
+
+proximo 
+
+servidor DHCP
+
+adicionar  recursos 
+proximo
+
+proximo
+ 
+proximo
+
+instalar
+
+na bandeira vai estar com uma esclamção em amarelo
+clicar na bandeira 
+
+proximo
+
+proximo 
+-----------------------------------------------------------------------------------
+
+configuração do DHCP
+
+
+
+
+clicar em ferramentas 
+
+DHCP
+
+clicar no seu servirdor
+
+clicar no  IPv4
+
+direito no IPv4 
+
+novo escopo
+
+avançar
+
+Digite um nome  para esse escopo (EX: vitorDHCP)
+
+avançar
+
+(aqui você consegue de terminar a quantidade de indereços IP
+EX: ENDEREÇO INICIAL 192.168.1.1 ENDEREÇO FINAL 192.168.1.50
+O DHCP só vai destribuir 50 numeros IP)
+
+
+ENDEREÇO INICIAL 172.16.1.1
+ENDEREÇO FINAL 172.16.1.50
+
+mascara de sub-rede 255.255.255.0 (usaremos a mascara de rede 255.255.255.0 que é de classe C )
+avançar
+
+
+avançar
+
+
+(escolher até quanto tempo as maquinas podem ficar com os IPs que o DHCP distribui)
+avançar
+
+
+
+sim, desjo configurar essas opcões agora
+avançar
+
+
+aqui iremos colocar o (gateway padrão)(um servidor de firewall)
+
+Endereço IP
+172.16.20.254
+avançar
+
+
+
+
+
+dominio pai(precisas estar com o nome do servidor)
+
+o indereço ip (se estiver o seu endereço ip do servidor clicar em  Avançar)
+(caso não esteja colocar)
+
+indereço ip 
+172.16.20.10  Adicionar
+avançar
+
+
+avançar
+
+(x)sim, desejo ativar este escopo agora
+
+avançar
+
+testar o seu DHCP
+----------------------------------------------------------------------------------
 
 
