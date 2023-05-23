@@ -1,0 +1,177 @@
+criação de pasta e compartilhamento de pasta e segurança nas pastas
+
+---------------------------------------------------------------------
+(fazer isso no servidor)
+(compartilhamento de pasta)
+
+
+clicar em explorador de arquivos 
+
+
+(clicar em um dos SSD que colocamos)
+
+clicar com o diretio (na parte em branco)
+
+
+novo 
+
+pasta
+
+gerentes
+
+clicar com o direito na pasta gerentes
+
+
+propriedades
+
+(clicar na parte de cima compartilhamento)
+
+Compartilhamento 
+
+compartilhamento avançado
+
+clicar em compartilhar a pasta
+
+clicar em premissões
+
+remover (todos)
+
+adicionar 
+
+usuarios do dominios 
+
+verificar nomes
+
+ok
+
+permissoes para  usuarios do dominio 
+
+alteração (assinalar)
+ok
+
+ok
+
+-------------------------------------------------------------------
+(aqui decidimos quem pode acessar ou quem pode ler ou escrever no arquivo)
+
+
+
+(clicar na parte de cima)
+
+ segurança
+
+clicar em Avançadas 
+
+desabilitar herança
+
+clicar em Coverter as permissões herdadas em permissões explícitas no objeto
+
+ok
+
+editar
+
+clicar em Usuários (?\Usuários)
+
+remover
+
+adicionar 
+
+gerentes (o grupo que voce criou)
+
+vereficar nomes
+
+ok
+
+
+(esta na parte de baixo)
+permissoes
+
+clicar na caixa
+
+modicar
+
+ok
+
+
+
+(pasta compartilhada e só os gerentes tem acesso e administrador)
+(criar mais 3 pasta compras, vendas, promoção)(compartilhar)
+-------------------------------------------------------------------
+
+Mapeamento de pastas (para os ususarios de cada area)
+
+clicar em explorador de arquivos
+
+clicar em disco local
+
+windows
+
+(procurar pasta SYSVOL)
+
+SYSVOL
+
+sysvol (de novo)
+
+clicar no nome do seu servidor
+
+scripts
+
+clicar com o direito do mause 
+
+novo 
+
+documento de texto (lembresse de colocar um nome )
+
+clicar no documento de testo 
+(aqui colocaremos os comando para mapear as pastas pros grupos de usuarios que criamos no documento de texto)
+
+net use X:\\nome do seu servidor\compras
+net use V:\\nome do seu servidor\gerentes
+net use U:\\nome do seu servidor\vendas
+
+clicar em arquivo
+
+salvar como 
+
+
+clicar em disco local
+
+windows
+
+(procurar pasta SYSVOL)
+
+SYSVOL
+
+sysvol (de novo)
+
+clicar no nome do seu servidor
+
+scripts
+
+Nome:gerentes.cmd  ( .cmd ou .bat )
+Tipo: todos os arquivos
+
+salvar
+
+
+abrir o gerenciador do servidor
+
+ferramentas
+
+Usuarios e computadores do Active Directory
+
+clicar na pasta grupo de gerentes 
+
+clicar nos usuario que vc criou (do grupo gerentes)
+
+propriedade
+
+clicar em perfil (se encontra na parte de cima)
+
+Script de logon: gerentes (o nome do documento precisa ser o mesmo que vc criou no script)
+
+ok
+
+(fazer isso em todos do grupo gerentes ) 
+
+(testar) (pronto mapeamento pronto)
