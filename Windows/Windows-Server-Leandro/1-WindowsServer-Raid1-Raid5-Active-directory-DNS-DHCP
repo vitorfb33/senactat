@@ -48,7 +48,7 @@ agora vamos inserir um numero ipv4 para o teamvitor (nicteam)
 teamvitor(clicar onde está azul)
 
 
-clicar com o botão direto do mause no teamvitor
+clicar com o botão direto do mouse no teamvitor
 
 propriedades 
 
@@ -71,13 +71,13 @@ e depois criar com o nome SSD1 até 8
 vamos colocar 8 disco rigido( o nome vai ser SSD1 o segundo vai ser SSD2 até o SSD8
 
 depois de ter feito isso e ligar a maquina virtual 
-clicar no simbolo do windows com o botão direito do mause
+clicar no simbolo do windows com o botão direito do mouse
 
 clicar em gerenciamento de disco (vai abrir o gerenciamento de disco)
 
 aqui faremos o raid 1 
 
-clicar com o botão direito do mause em um disco que não esta alocado
+clicar com o botão direito do mouse em um disco que não esta alocado
 
 clicar em novo Volume Espelhado
 
@@ -105,7 +105,7 @@ sim
 -------------------------------------------------------------
 raid 5 
 
-clicar com o botão direito do mause em um disco que não esta alocado
+clicar com o botão direito do mouse em um disco que não esta alocado
 
 clicar novo volume raid 5
 
@@ -277,7 +277,7 @@ clicar no seu servirdor
 
 clicar no  IPv4
 
-direito no IPv4 
+clicar com o direito do mouse no IPv4 
 
 novo escopo
 
